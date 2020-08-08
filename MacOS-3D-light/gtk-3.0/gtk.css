@@ -7211,7 +7211,6 @@ FIXME this is really an API */
    margin: -2px 0;
    background-color: #f25056;
    color: rgba(255, 255, 255, 0.7);
-   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12), 0 3px 3px rgba(0, 0, 0, 0.06);
   }
  #MozillaGtkWidget.background headerbar.titlebar.default-decoration button.titlebutton.maximize:hover, .solid-csd headerbar:not(.default-decoration) button.titlebutton.maximize:hover, headerbar button.titlebutton.maximize:hover, .csd headerbar button.titlebutton.maximize:hover, headerbar.default-decoration button.titlebutton.maximize:hover, .csd headerbar.default-decoration button.titlebutton.maximize:hover,
  .titlebar button.titlebutton.maximize:hover, .csd .titlebar button.titlebutton.maximize:hover,
@@ -7220,7 +7219,6 @@ FIXME this is really an API */
    margin: -2px 0;
    background-color: #39ea49;
    color: rgba(255, 255, 255, 0.7);
-   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12), 0 3px 3px rgba(0, 0, 0, 0.06);
   }
  #MozillaGtkWidget.background headerbar.titlebar.default-decoration button.titlebutton.minimize:hover, .solid-csd headerbar:not(.default-decoration) button.titlebutton.minimize:hover, headerbar button.titlebutton.minimize:hover, .csd headerbar button.titlebutton.minimize:hover, headerbar.default-decoration button.titlebutton.minimize:hover, .csd headerbar.default-decoration button.titlebutton.minimize:hover,
  .titlebar button.titlebutton.minimize:hover, .csd .titlebar button.titlebutton.minimize:hover,
@@ -7229,7 +7227,6 @@ FIXME this is really an API */
    margin: -2px 0;
    background-color: #fac536;
    color: rgba(255, 255, 255, 0.7);
-   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.12), 0 3px 3px rgba(0, 0, 0, 0.06);
   }
  
  .solid-csd headerbar:not(.default-decoration) button.titlebutton.close:hover, .solid-csd headerbar:not(.default-decoration) button.titlebutton.maximize:hover, .solid-csd headerbar:not(.default-decoration) button.titlebutton.minimize:hover, headerbar button.titlebutton.close:hover, headerbar button.titlebutton.close:backdrop:hover, headerbar button.titlebutton.maximize:hover, headerbar button.titlebutton.maximize:backdrop:hover, headerbar button.titlebutton.minimize:hover, headerbar button.titlebutton.minimize:backdrop:hover, .csd headerbar button.titlebutton.close:hover, .csd headerbar button.titlebutton.close:backdrop:hover, .csd headerbar button.titlebutton.maximize:hover, .csd headerbar button.titlebutton.maximize:backdrop:hover, .csd headerbar button.titlebutton.minimize:hover, .csd headerbar button.titlebutton.minimize:backdrop:hover, headerbar.default-decoration button.titlebutton.close:hover, headerbar.default-decoration button.titlebutton.close:backdrop:hover, headerbar.default-decoration button.titlebutton.maximize:hover, headerbar.default-decoration button.titlebutton.maximize:backdrop:hover, headerbar.default-decoration button.titlebutton.minimize:hover, headerbar.default-decoration button.titlebutton.minimize:backdrop:hover, .csd headerbar.default-decoration button.titlebutton.close:hover, .csd headerbar.default-decoration button.titlebutton.close:backdrop:hover, .csd headerbar.default-decoration button.titlebutton.maximize:hover, .csd headerbar.default-decoration button.titlebutton.maximize:backdrop:hover, .csd headerbar.default-decoration button.titlebutton.minimize:hover, .csd headerbar.default-decoration button.titlebutton.minimize:backdrop:hover,
