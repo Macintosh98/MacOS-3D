@@ -190,7 +190,6 @@ label.h4, .emoji-picker box.vertical > label,
   background-color: #333;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), alpha(@highlight_color, 0.2));
   border: 1px solid rgba(0, 0, 0, 0.75);
-  border-radius: 0.250000001rem;
   box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), inset 0 -1px 0 0 #2c2c2c, 0 1px 2px rgba(0, 0, 0, 0.05);
   font-size: 85%;
   min-width: 1.000000001rem;
@@ -226,12 +225,10 @@ selection {
 }
 
 .circular {
-  border-radius: 9999px; 
 }
 
 .avatar {
   border: 1px solid rgba(0, 0, 0, 0.35);
-  border-radius: 50%;
   box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
 }
 
@@ -249,7 +246,6 @@ selection {
 
 button {
   background-clip: padding-box;
-  border-radius: 0.250000001rem;
   color: @fg_color;
   padding: 0.3333333343rem 0.5833333343rem;
   transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1); 
@@ -336,10 +332,9 @@ button {
     transition: background 100ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   }
   .card.rounded {
-    border-radius: 0.250000001rem; 
   }
 
-/* check,
+check,
 radio {
   background-color: #4d4d4d;
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -372,14 +367,12 @@ radio {
   check:indeterminate,
   radio:indeterminate {
     -gtk-icon-source: -gtk-icontheme("check-mixed-symbolic"); 
-  } */
+  }
 
 check {
-  border-radius: 0.250000001rem; 
 }
 
 radio {
-  border-radius: 50%; 
 }
 
 radiobutton image:dir(ltr),
@@ -405,7 +398,6 @@ radiobutton.image-button:checked,
 checkbutton.image-button:checked {
   background: alpha(@accent_color, 0.1);
   border: 1px solid alpha(@accent_color, 0.25);
-  border-radius: 0.250000001rem; 
 }
   radiobutton.image-button:checked:backdrop,
   checkbutton.image-button:checked:backdrop {
@@ -426,7 +418,6 @@ radiobutton.image-button {
 .color-button radio:checked {
   background-image: none;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
   box-shadow: 0 1px 0 0 alpha(@highlight_color, 0.3), inset 0 1px 1px rgba(0, 0, 0, 0.05), inset 0 0 1px 1px rgba(0, 0, 0, 0.05);
   min-height: 1.000000001rem;
   min-width: 1.000000001rem;
@@ -502,11 +493,9 @@ radiobutton.image-button {
 }
 
 .emoji-picker stack box > box.horizontal {
-  border-radius: 0 0 0.500000001rem 0.500000001rem; 
 }
 
 .emoji-picker .emoji-section {
-  border-radius: 0;
   box-shadow: none;
   min-height: 24px;
   min-width: 24px;
@@ -529,7 +518,6 @@ spinbutton, entry {
   background-color: #4d4d4d;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.75);
-  border-radius: 0.250000001rem;
   box-shadow: 0 1px 0 0 alpha(@highlight_color, 0.3), inset 0 1px 1px rgba(0, 0, 0, 0.05), inset 0 0 1px 1px rgba(0, 0, 0, 0.05);
   color: @fg_color; 
 }
@@ -602,7 +590,6 @@ infobar.question revealer > box {
 levelbar block {
   background-color: @accent_color_300;
   border: 1px solid rgba(0, 0, 0, 0.5);
-  border-radius: 0.500000001rem;
   box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 1px 1px rgba(0, 0, 0, 0.05);
   transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
@@ -719,7 +706,6 @@ popover, menu,
 window.menu,
 window.popup {
   background-color: #333;
-  border-radius: 0.500000001rem;
   color: white; 
 }
 
@@ -879,7 +865,6 @@ window.popup {
   menu decoration,
   window.menu decoration,
   window.popup decoration {
-    border-radius: 0.500000001rem;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.75), 0 3px 4px rgba(0, 0, 0, 0.25), 0 3px 3px -3px rgba(0, 0, 0, 0.45); 
   }
   menu window.popup decoration,
@@ -912,7 +897,6 @@ notebook viewport {
 }
 
 tab {
-  border-radius: 0.250000001rem;
   transition: all 300ms ease-in;
   margin: 0.250000001rem 0;
   min-width: 24px;
@@ -931,7 +915,6 @@ tab {
 
 window.notification .draw-area {
   background-color: #333;
-  border-radius: 0.500000001rem;
   box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px rgba(0, 0, 0, 0.75), 0 3px 8px 2px rgba(0, 0, 0, 0.2), 0 5px 5px -3px rgba(0, 0, 0, 0.5), 0 8px 5px 1px rgba(0, 0, 0, 0.2); 
 }
   window.notification .draw-area image {
@@ -947,7 +930,6 @@ window.notification .draw-area {
   window.notification .draw-area progressbar trough {
     box-shadow: none;
     border: none;
-    border-radius: 0.500000001rem;
     margin: 0; 
   }
   window.notification .draw-area progressbar progress,
@@ -992,12 +974,10 @@ popover {
   }
 
 progressbar {
-  border-radius: 0.1666666677rem; 
 }
   progressbar progress,
   progressbar trough {
     border: 1px solid rgba(0, 0, 0, 0.5);
-    border-radius: 0.1666666677rem; 
   }
   progressbar progress {
     background-color: @accent_color_300;
@@ -1039,7 +1019,6 @@ scale mark indicator {
 
 scale slider {
   background-color: #333;
-  border-radius: 1.000000001rem;
   box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px rgba(0, 0, 0, 0.25), 0 1px 1px 1px rgba(0, 0, 0, 0.1);
   min-height: 1.1666666677rem;
   min-width: 1.1666666677rem; 
@@ -1056,7 +1035,6 @@ scale slider {
 
 scale trough {
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 1.000000001rem;
   background-color: rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 0 0 alpha(@highlight_color, 0.3), inset 0 1px 1px rgba(0, 0, 0, 0.05), inset 0 0 1px 1px rgba(0, 0, 0, 0.05);
   min-height: 0.250000001rem;
@@ -1076,13 +1054,11 @@ scale.accent highlight {
 
 scale.horizontal highlight.top,
 scale.horizontal fill.top {
-  border-radius: 1.000000001rem 0 0 1.000000001rem;
   margin: 0 0 0 -0.499999999rem; 
 }
 
 scale.horizontal highlight.bottom,
 scale.horizontal fill.bottom {
-  border-radius: 0 1.000000001rem 1.000000001rem 0;
   margin: 0 -0.499999999rem 0 0; 
 }
 
@@ -1102,13 +1078,11 @@ scale.horizontal trough {
 
 scale.vertical highlight.top,
 scale.vertical fill.top {
-  border-radius: 1.000000001rem 1.000000001rem 0 0;
   margin: -0.499999999rem 0 0; 
 }
 
 scale.vertical highlight.bottom,
 scale.vertical fill.bottom {
-  border-radius: 0 0 1.000000001rem 1.000000001rem;
   margin: 0 0 -0.499999999rem; 
 }
 
@@ -1149,7 +1123,6 @@ scrollbar {
   }
     scrollbar:hover trough, scrollbar.hovering trough {
       background-color: transparent;
-      border-radius: 0; 
     }
   scrollbar button {
     border: none;
@@ -1160,7 +1133,6 @@ scrollbar {
     background-clip: padding-box;
     background-color: rgba(255, 255, 255, 0.6);
     border: 1px solid rgba(51, 51, 51, 0.25);
-    border-radius: 0.8333333343rem;
     margin: 1px;
     transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1); 
   }
@@ -1179,7 +1151,6 @@ scrollbar {
     min-width: 0.750000001rem; 
   }
   scrollbar.overlay-indicator slider {
-    border-radius: 1.6666666677rem; 
   }
   scrollbar.overlay-indicator trough {
     background-color: transparent; 
@@ -1251,7 +1222,6 @@ spinbutton.horizontal button {
   }
   spinbutton.horizontal button.down {
     border-color: rgba(0, 0, 0, 0.1);
-    border-radius: 0;
     border-style: solid;
     border-width: 0 1px; 
   }
@@ -1348,7 +1318,6 @@ webkitwebview > shadow.down {
   }
   .storage-bar .fill-block.legend {
     padding: 0.6666666677rem;
-    border-radius: 50%; 
   }
   .storage-bar .fill-block.empty-block, .storage-bar .fill-block.unused {
     background-image: linear-gradient(to bottom, #ededed, #d4d4d4);
@@ -1379,7 +1348,6 @@ switch {
   background-color: rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 0 0 alpha(@highlight_color, 0.3), inset 0 1px 1px rgba(0, 0, 0, 0.05), inset 0 0 1px 1px rgba(0, 0, 0, 0.05);
-  border-radius: 1.3333333343rem;
   transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
   switch:checked:not(.mode-switch):not(:backdrop) {
@@ -1395,7 +1363,6 @@ switch {
   switch slider {
     background-color: #333;
     background-clip: padding-box;
-    border-radius: 50%;
     box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     min-height: 2.000000001rem;
     min-width: 2.000000001rem; 
@@ -1416,7 +1383,6 @@ switch {
 .app-notification.frame {
   background-color: rgba(255, 255, 255, 0.85);
   border: none;
-  border-radius: 0.500000001rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.42), 0 1px 2px rgba(0, 0, 0, 0.44);
   margin: 0.500000001rem;
   padding: 0.500000001rem; 
@@ -1429,7 +1395,6 @@ switch {
     .app-notification button.close-button,
     .app-notification.frame button.close-button {
       background-color: white;
-      border-radius: 50%;
       color: rgba(77, 77, 77, 0.9);
       padding: 0.500000001rem; 
     }
@@ -1477,7 +1442,6 @@ actionbar {
 tooltip.background,
 .overlay-bar {
   background-color: rgba(26, 26, 26, 0.9);
-  border-radius: 0.250000001rem;
   padding: 0.250000001rem 0.500000001rem; 
 }
   tooltip.background label,
@@ -1491,7 +1455,6 @@ tooltip.background,
 
 tooltip.csd decoration,
 .overlay-bar {
-  border-radius: 0.250000001rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.42), 0 1px 2px rgba(0, 0, 0, 0.44);
   margin: 0.250000001rem; 
 }
@@ -1526,7 +1489,6 @@ scrolledwindow > viewport.frame {
 rubberband {
   background-color: alpha (@accent_color, 0.15);
   border: 1px solid alpha (@accent_color, 0.5);
-  border-radius: 0.250000001rem; 
 }
 
 window {
@@ -1535,17 +1497,17 @@ window {
 }
 
 window.csd:not(.popup):not(.menu) > decoration,
-dialog > decoration {
+dialog > decoration,
+messagedialog > decoration {
   margin: 1.000000001rem; 
 }
 
 window.csd:not(.popup):not(.menu) > .titlebar,
-dialog > .titlebar {
-  border-radius: 0.500000001rem 0.500000001rem 0 0; 
+dialog > .titlebar,
+messagedialog > .titlebar {
 }
 
 window:not(.popup):not(.menu) > decoration {
-  border-radius: 0.500000001rem 0.500000001rem 0 0; 
 }
 
 window:not(.popup):not(.menu).csd {
@@ -1559,12 +1521,10 @@ window:not(.popup):not(.menu).csd {
     }
   window:not(.popup):not(.menu).csd.maximized > decoration {
     background-color: black;
-    border-radius: 0;
     box-shadow: none; 
   }
   window:not(.popup):not(.menu).csd.tiled:not(.maximized) > decoration {
     background-color: black;
-    border-radius: 0;
     box-shadow: 0 13px 16px 4px transparent, 0 1px 3px rgba(0, 0, 0, 0.42), 0 1px 2px rgba(0, 0, 0, 0.44); 
   }
   window:not(.popup):not(.menu).csd.tiled:not(.maximized).tiled-left.tiled-top .titlebar {
@@ -1596,32 +1556,26 @@ window:not(.popup):not(.menu).csd {
     }
 
 window:not(.popup):not(.menu).rounded {
-  border-radius: 0 0 0.500000001rem 0.500000001rem; 
 }
   window:not(.popup):not(.menu).rounded > decoration {
-    border-radius: 0.500000001rem; 
   }
 
 window:not(.popup):not(.menu).ssd decoration {
-  border-radius: 6px 6px 0 0;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.75);
   margin: 12px; 
 }
 
 window:not(.popup):not(.menu).ssd .titlebar {
   border-bottom: 1px solid rgba(0, 0, 0, 0.75);
-  border-radius: 6px 6px 0 0;
   box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07);
   padding: 3px; 
 }
   window:not(.popup):not(.menu).ssd .titlebar button {
-    border-radius: 3px;
     padding: 3px; 
   }
 
 window:not(.popup):not(.menu).unified decoration,
 window:not(.popup):not(.menu).unified decoration-overlay {
-  border-radius: 0.500000001rem; 
 }
 
 window:not(.popup):not(.menu).unified decoration {
@@ -1665,21 +1619,24 @@ window:not(.popup):not(.menu) .titlebar {
     -gtk-icon-shadow: none; 
   }
 
-dialog {
-  border-radius: 0 0 0.500000001rem 0.500000001rem;
+dialog,
+messagedialog {
   box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07); 
 }
-  dialog > decoration {
-    border-radius: 0.500000001rem;
+  dialog > decoration,
+  messagedialog > decoration {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.75), 0 3px 8px 2px rgba(0, 0, 0, 0.2), 0 5px 5px -3px rgba(0, 0, 0, 0.5), 0 8px 5px 1px rgba(0, 0, 0, 0.2); 
   }
-    dialog > decoration:backdrop {
+    dialog > decoration:backdrop,
+    messagedialog > decoration:backdrop {
       box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.75), 0 3px 4px rgba(0, 0, 0, 0.25), 0 3px 3px -3px rgba(0, 0, 0, 0.45); 
     }
-  dialog > .titlebar {
+  dialog > .titlebar,
+  messagedialog > .titlebar {
     box-shadow: inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07); 
   }
-    dialog > .titlebar label.title {
+    dialog > .titlebar label.title,
+    messagedialog > .titlebar label.title {
       text-shadow: none;
       -gtk-icon-shadow: none;
       font-size: 0.1px;
