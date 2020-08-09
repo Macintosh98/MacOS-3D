@@ -334,7 +334,7 @@ button {
   .card.rounded {
   }
 
-check,
+/* check,
 radio {
   background-color: #4d4d4d;
   border: 1px solid rgba(0, 0, 0, 0.5);
@@ -373,7 +373,7 @@ check {
 }
 
 radio {
-}
+} */
 
 radiobutton image:dir(ltr),
 radiobutton label:dir(ltr),
