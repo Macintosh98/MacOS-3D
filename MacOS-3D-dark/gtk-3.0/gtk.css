@@ -6887,6 +6887,22 @@ window.background.csd.thunar > grid.horizontal > paned.horizontal > scrolledwind
 /*****************
  * Title buttons *
  *****************/
+ 
+ .raven .expander-button, .raven .raven-header:not(.top) button.image-button, widget > box.terminal-titlebar > button.image-button, widget > box.terminal-titlebar > button.image-button.toggle, .terminix-session-sidebar button.tilix-sidebar-close-button,
+ .tilix-session-sidebar button.tilix-sidebar-close-button, .nemo-window toolbar.primary-toolbar > toolitem > box.raised > button,
+ .nemo-window toolbar.primary-toolbar > toolitem > box.linked.raised > button, .nautilus-window headerbar > revealer > button, .solid-csd headerbar:not(.default-decoration) button.titlebutton, headerbar button.titlebutton, .csd headerbar button.titlebutton, .csd headerbar.default-decoration button.titlebutton,
+ .titlebar button.titlebutton, .csd .titlebar button.titlebutton,
+ .titlebar.default-decoration button.titlebutton, .csd .titlebar.default-decoration button.titlebutton, row button.image-button, check,
+ radio,
+ headerbar.default-decoration button.titlebutton,
+ headerbar button.suggested-action,
+ headerbar button.destructive-action,
+ headerbar button:not(.suggested-action):not(.destructive-action),
+ button.close,
+ button.circular {
+   border-radius: 9999px;
+   -gtk-outline-radius: 9999px;
+ }
 
  headerbar,
  .titlebar {
