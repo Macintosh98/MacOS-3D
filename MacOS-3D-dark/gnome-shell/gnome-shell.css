@@ -1,24 +1,3 @@
-
-
-/* This stylesheet is generated, DO NOT EDIT */
-/* Copyright 2009, 2015 Red Hat, Inc.
- *
- * Portions adapted from Mx's data/style/default.css
- *   Copyright 2009 Intel Corporation
- *
- * This program is free software; you can redistribute it and/or modify it
- * under the terms and conditions of the GNU Lesser General Public License,
- * version 2.1, as published by the Free Software Foundation.
- *
- * This program is distributed in the hope it will be useful, but WITHOUT ANY
- * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
- * more details.
- *
- * You should have received a copy of the GNU Lesser General Public License
- * along with this program; if not, write to the Free Software Foundation,
- * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
- */
 /* GLOBALS */
 * {
   transition-duration: 150ms;
@@ -3718,6 +3697,9 @@ StWidget.focused .app-well-app-running-dot {
   color: rgba(255, 255, 255, 0.9);
 }
 
+
+
+
 #panel {
   background-color: rgba(0, 0, 0, 0);
   height: 30px;
@@ -3825,7 +3807,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 #dashtodockContainer:overview #dash {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(16, 16, 16, 0.25);
 }
 
 #dashtodockContainer:overview #dash .app-well-app-running-dot {
