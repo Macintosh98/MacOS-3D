@@ -1,3 +1,21 @@
+/*
+* Copyright 2020 elementary, Inc. (https://elementary.io)
+*
+* This program is free software; you can redistribute it and/or
+* modify it under the terms of the GNU General Public
+* License as published by the Free Software Foundation; either
+* version 3 of the License, or (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+* General Public License for more details.
+*
+* You should have received a copy of the GNU General Public
+* License along with this program; if not, write to the
+* Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+* Boston, MA 02110-1301 USA.
+*/
 @define-color STRAWBERRY_100 #ff8c82;
 @define-color STRAWBERRY_300 #ed5353;
 @define-color STRAWBERRY_500 #c6262e;
@@ -65,11 +83,13 @@
 @define-color accent_color_700 @BLUEBERRY_700;
 @define-color accent_color_900 @BLUEBERRY_900;
 @define-color accent_color @BLUEBERRY_700;
+assistant .titlebar,
 window:not(.popup):not(.menu) .titlebar, switch slider, switch:checked:not(.mode-switch):not(:backdrop), scale slider, progressbar.horizontal progress,
 progressbar.horizontal trough, levelbar.horizontal block, check,
 radio, .linked button.flat, .linked button.image-button, button.circular.image-button, button.model.image-button, button.raised.image-button, button {
   background-image: linear-gradient(to bottom, alpha(@highlight_color, 0.2), rgba(255, 255, 255, 0)); 
 }
+  assistant .titlebar:backdrop,
   window:not(.popup):not(.menu) .titlebar:backdrop, switch slider:backdrop, switch:backdrop:checked:not(.mode-switch):not(:backdrop), scale slider:backdrop, progressbar.horizontal progress:backdrop,
   progressbar.horizontal trough:backdrop, levelbar.horizontal block:backdrop, check:backdrop,
   radio:backdrop, .linked button.flat:backdrop, .linked button.image-button:backdrop, button.circular.image-button:backdrop, button.model.image-button:backdrop, button.raised.image-button:backdrop, button:backdrop {
@@ -196,6 +216,9 @@ selection {
   background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1)), linear-gradient(45deg, rgba(0, 0, 0, 0.1) 25%, transparent 25%, transparent 75%, rgba(0, 0, 0, 0.1) 75%, rgba(0, 0, 0, 0.1));
   background-size: 2.000000001rem 2.000000001rem;
   background-position: 0 0, 1.000000001rem 1.000000001rem; 
+}
+
+.circular {
 }
 
 .avatar {
@@ -338,9 +361,8 @@ radio {
   check:indeterminate,
   radio:indeterminate {
     -gtk-icon-source: -gtk-icontheme("check-mixed-symbolic"); 
-  }
+  } */
 
-*/
 
 radiobutton image:dir(ltr),
 radiobutton label:dir(ltr),
@@ -455,6 +477,9 @@ radiobutton.image-button {
   min-height: 36px;
   min-width: 36px;
   font-size: 16px; 
+}
+
+.emoji-picker stack box > box.horizontal {
 }
 
 .emoji-picker .emoji-section {
@@ -934,6 +959,8 @@ popover {
     background: linear-gradient(rgba(250, 250, 250, 0) 50%, #fafafa 100%); 
   }
 
+progressbar {
+}
   progressbar progress,
   progressbar trough {
     border: 1px solid rgba(0, 0, 0, 0.2);
@@ -1449,106 +1476,157 @@ window {
   color: #333; 
 }
 
+assistant > decoration,
 window.csd:not(.popup):not(.menu) > decoration,
 dialog > decoration,
 messagedialog > decoration {
   margin: 1.000000001rem; 
 }
 
+assistant > .titlebar,
+window.csd:not(.popup):not(.menu) > .titlebar,
+dialog > .titlebar,
+messagedialog > .titlebar {
+}
+
+assistant > decoration,
+window:not(.popup):not(.menu) > decoration {
+}
+
+assistant.csd,
 window:not(.popup):not(.menu).csd {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2); 
 }
+  assistant.csd > decoration,
   window:not(.popup):not(.menu).csd > decoration {
     box-shadow: 0 13px 16px 4px transparent, 0 2px 4px 2px rgba(0, 0, 0, 0.1), 0 15px 12px -10px rgba(0, 0, 0, 0.4), 0 8px 14px 4px rgba(0, 0, 0, 0.15); 
   }
+    assistant.csd > decoration:backdrop,
     window:not(.popup):not(.menu).csd > decoration:backdrop {
       box-shadow: 0 13px 16px 4px transparent, 0 3px 4px rgba(0, 0, 0, 0.15), 0 3px 3px -3px rgba(0, 0, 0, 0.35); 
     }
+  assistant.csd.maximized > decoration,
   window:not(.popup):not(.menu).csd.maximized > decoration {
     background-color: black;
     box-shadow: none; 
   }
+  assistant.csd.tiled:not(.maximized) > decoration,
   window:not(.popup):not(.menu).csd.tiled:not(.maximized) > decoration {
     background-color: black;
     box-shadow: 0 13px 16px 4px transparent, 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
   }
+  assistant.csd.tiled:not(.maximized).tiled-left.tiled-top .titlebar,
   window:not(.popup):not(.menu).csd.tiled:not(.maximized).tiled-left.tiled-top .titlebar {
     border-top-right-radius: 0; 
   }
+  assistant.csd.tiled:not(.maximized).tiled-left.tiled-bottom actionbar,
   window:not(.popup):not(.menu).csd.tiled:not(.maximized).tiled-left.tiled-bottom actionbar {
     border-bottom-right-radius: 0; 
   }
+  assistant.csd.tiled:not(.maximized).tiled-right.tiled-top .titlebar,
   window:not(.popup):not(.menu).csd.tiled:not(.maximized).tiled-right.tiled-top .titlebar {
     border-top-left-radius: 0; 
   }
+  assistant.csd.tiled:not(.maximized).tiled-right.tiled-bottom actionbar,
   window:not(.popup):not(.menu).csd.tiled:not(.maximized).tiled-right.tiled-bottom actionbar {
     border-bottom-left-radius: 0; 
   }
+  assistant.csd .titlebar,
   window:not(.popup):not(.menu).csd .titlebar {
     box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.7), 0.4), 0 0.0833333343rem 0.1666666677rem rgba(0, 0, 0, 0.2);
     padding: 0.500000001rem; 
   }
+    assistant.csd .titlebar:backdrop,
     window:not(.popup):not(.menu).csd .titlebar:backdrop {
       box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.7), 0.3), 0 0.0833333343rem 0.1666666677rem rgba(0, 0, 0, 0.15); 
     }
+    assistant.csd .titlebar.default-decoration,
     window:not(.popup):not(.menu).csd .titlebar.default-decoration {
       padding: 0.250000001rem; 
     }
+    assistant.csd .titlebar.flat,
     window:not(.popup):not(.menu).csd .titlebar.flat {
       background: #fafafa;
       box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2), -1px 0 0 0 rgba(0, 0, 0, 0.2), 0 -1px 0 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07); 
     }
 
+assistant.rounded,
+window:not(.popup):not(.menu).rounded {
+}
+  assistant.rounded > decoration,
+  window:not(.popup):not(.menu).rounded > decoration {
+  }
 
+assistant.ssd decoration,
 window:not(.popup):not(.menu).ssd decoration {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
   margin: 12px; 
 }
 
+assistant.ssd .titlebar,
 window:not(.popup):not(.menu).ssd .titlebar {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07);
   padding: 3px; 
 }
+  assistant.ssd .titlebar button,
   window:not(.popup):not(.menu).ssd .titlebar button {
     padding: 3px; 
   }
 
+assistant.unified decoration,
+assistant.unified decoration-overlay,
+window:not(.popup):not(.menu).unified decoration,
+window:not(.popup):not(.menu).unified decoration-overlay {
+}
 
+assistant.unified decoration,
 window:not(.popup):not(.menu).unified decoration {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2), 0 13px 16px 4px transparent, 0 2px 4px 2px rgba(0, 0, 0, 0.1), 0 15px 12px -10px rgba(0, 0, 0, 0.4), 0 8px 14px 4px rgba(0, 0, 0, 0.15); 
 }
+  assistant.unified decoration:backdrop,
   window:not(.popup):not(.menu).unified decoration:backdrop {
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2), 0 13px 16px 4px transparent, 0 3px 4px rgba(0, 0, 0, 0.15), 0 3px 3px -3px rgba(0, 0, 0, 0.35); 
   }
 
+assistant.unified decoration-overlay,
 window:not(.popup):not(.menu).unified decoration-overlay {
   box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07); 
 }
 
+assistant.unified .titlebar,
 window:not(.popup):not(.menu).unified .titlebar {
   box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.7), 0.4), 0 0.0833333343rem 0.1666666677rem rgba(0, 0, 0, 0.2); 
 }
+  assistant.unified .titlebar:backdrop,
   window:not(.popup):not(.menu).unified .titlebar:backdrop {
     box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.7), 0.3), 0 0.0833333343rem 0.1666666677rem rgba(0, 0, 0, 0.15); 
   }
 
+assistant .titlebar,
 window:not(.popup):not(.menu) .titlebar {
   background-color: @color_primary; 
 }
+  assistant .titlebar .title,
   window:not(.popup):not(.menu) .titlebar .title {
     font-weight: 600;
     text-shadow: 0 1px rgba(255, 255, 255, 0.5); 
   }
+  assistant .titlebar .subtitle,
   window:not(.popup):not(.menu) .titlebar .subtitle {
     opacity: 0.75;
     font-size: 80%; 
   }
+  assistant .titlebar .titlebutton,
+  assistant .titlebar .image-button,
+  assistant .titlebar .mode-switch,
   window:not(.popup):not(.menu) .titlebar .titlebutton,
   window:not(.popup):not(.menu) .titlebar .image-button,
   window:not(.popup):not(.menu) .titlebar .mode-switch {
     -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.5); 
   }
+  assistant .titlebar popover,
+  assistant .titlebar menu,
   window:not(.popup):not(.menu) .titlebar popover,
   window:not(.popup):not(.menu) .titlebar menu {
     text-shadow: none;
