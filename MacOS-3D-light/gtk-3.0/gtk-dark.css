@@ -265,7 +265,7 @@ spinner:checked:disabled {
 /****************
  * Text Entries *
  ****************/
-spinbutton.vertical, spinbutton:not(.vertical),
+.nemo-window .primary-toolbar entry, .titlebar entry, spinbutton.vertical, spinbutton:not(.vertical),
 entry {
   min-height: 32px;
   padding: 0 8px;
@@ -276,23 +276,23 @@ entry {
   color: white;
 }
 
-spinbutton.vertical:focus, spinbutton:focus:not(.vertical),
+.nemo-window .primary-toolbar entry:focus, spinbutton.vertical:focus, spinbutton:focus:not(.vertical),
 entry:focus {
   background-color: rgba(255, 255, 255, 0.04);
 }
 
-spinbutton.vertical:drop(active), spinbutton:drop(active):not(.vertical),
+.nemo-window .primary-toolbar entry:drop(active), spinbutton.vertical:drop(active), spinbutton:drop(active):not(.vertical),
 entry:drop(active) {
   background-color: alpha(currentColor, 0.08);
 }
 
-spinbutton.vertical:disabled, spinbutton:disabled:not(.vertical),
+.nemo-window .primary-toolbar entry:disabled, spinbutton.vertical:disabled, spinbutton:disabled:not(.vertical),
 entry:disabled {
   background-color: rgba(255, 255, 255, 0.04);
   color: rgba(255, 255, 255, 0.5);
 }
 
-spinbutton.flat.vertical, spinbutton.flat:not(.vertical),
+.nemo-window .primary-toolbar entry.flat, spinbutton.flat.vertical, spinbutton.flat:not(.vertical),
 entry.flat {
   min-height: 0;
   padding: 2px;
@@ -300,35 +300,35 @@ entry.flat {
   background-color: transparent;
 }
 
-spinbutton.vertical image, spinbutton:not(.vertical) image,
+.nemo-window .primary-toolbar entry image, .titlebar entry image, spinbutton.vertical image, spinbutton:not(.vertical) image,
 entry image {
   color: rgba(255, 255, 255, 0.7);
 }
 
-spinbutton.vertical image:hover, spinbutton:not(.vertical) image:hover, spinbutton.vertical image:active, spinbutton:not(.vertical) image:active,
+.nemo-window .primary-toolbar entry image:hover, spinbutton.vertical image:hover, spinbutton:not(.vertical) image:hover, .nemo-window .primary-toolbar entry image:active, spinbutton.vertical image:active, spinbutton:not(.vertical) image:active,
 entry image:hover,
 entry image:active {
   color: white;
 }
 
-spinbutton.vertical image:disabled, spinbutton:not(.vertical) image:disabled,
+.nemo-window .primary-toolbar entry image:disabled, spinbutton.vertical image:disabled, spinbutton:not(.vertical) image:disabled,
 entry image:disabled {
   color: rgba(255, 255, 255, 0.5);
 }
 
-spinbutton.vertical image.left, spinbutton:not(.vertical) image.left,
+.nemo-window .primary-toolbar entry image.left, spinbutton.vertical image.left, spinbutton:not(.vertical) image.left,
 entry image.left {
   margin-left: 0px;
   margin-right: 6px;
 }
 
-spinbutton.vertical image.right, spinbutton:not(.vertical) image.right,
+.nemo-window .primary-toolbar entry image.right, spinbutton.vertical image.right, spinbutton:not(.vertical) image.right,
 entry image.right {
   margin-left: 6px;
   margin-right: 0px;
 }
 
-spinbutton.vertical undershoot.left, spinbutton:not(.vertical) undershoot.left,
+.nemo-window .primary-toolbar entry undershoot.left, spinbutton.vertical undershoot.left, spinbutton:not(.vertical) undershoot.left,
 entry undershoot.left {
   background-color: transparent;
   background-image: linear-gradient(to top, transparent 50%, rgba(255, 255, 255, 0.3) 50%);
@@ -341,7 +341,7 @@ entry undershoot.left {
   margin: 4px 0;
 }
 
-spinbutton.vertical undershoot.right, spinbutton:not(.vertical) undershoot.right,
+.nemo-window .primary-toolbar entry undershoot.right, spinbutton.vertical undershoot.right, spinbutton:not(.vertical) undershoot.right,
 entry undershoot.right {
   background-color: transparent;
   background-image: linear-gradient(to top, transparent 50%, rgba(255, 255, 255, 0.3) 50%);
@@ -354,7 +354,7 @@ entry undershoot.right {
   margin: 4px 0;
 }
 
-spinbutton.error.vertical, spinbutton.error:not(.vertical),
+.nemo-window .primary-toolbar entry.error, spinbutton.error.vertical, spinbutton.error:not(.vertical),
 entry.error {
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0, 0, 0.2, 1);
   background-color: rgba(255, 255, 255, 0.04);
@@ -372,7 +372,7 @@ entry.error:disabled {
   color: rgba(255, 255, 255, 0.5);
 }
 
-spinbutton.warning.vertical, spinbutton.warning:not(.vertical),
+.nemo-window .primary-toolbar entry.warning, spinbutton.warning.vertical, spinbutton.warning:not(.vertical),
 entry.warning {
   transition: all 75ms cubic-bezier(0, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0, 0, 0.2, 1);
   background-color: rgba(255, 255, 255, 0.04);
@@ -390,7 +390,7 @@ entry.warning:disabled {
   color: rgba(255, 255, 255, 0.5);
 }
 
-spinbutton.vertical progress, spinbutton:not(.vertical) progress,
+.nemo-window .primary-toolbar entry progress, .titlebar entry progress, spinbutton.vertical progress, spinbutton:not(.vertical) progress,
 entry progress {
   margin: 2px -8px;
   border-bottom: 2px solid #3281ea;
@@ -891,22 +891,22 @@ stacksidebar.sidebar row.needs-attention > label:dir(rtl), .stack-switcher > but
   background-position: left 3px;
 }
 
-.linked:not(.vertical) > spinbutton.vertical:not(:first-child), .linked:not(.vertical) > spinbutton:not(:first-child):not(.vertical), .linked:not(.vertical) > entry:not(:first-child), .linked:not(.vertical) > button:not(:first-child) {
+.nemo-window .primary-toolbar .linked:not(.vertical) > entry:not(:first-child), .titlebar .linked:not(.vertical) > entry:not(:first-child), .linked:not(.vertical) > spinbutton.vertical:not(:first-child), .linked:not(.vertical) > spinbutton:not(:first-child):not(.vertical), .linked:not(.vertical) > entry:not(:first-child), .linked:not(.vertical) > button:not(:first-child) {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
 }
 
-.linked:not(.vertical) > spinbutton.vertical:not(:last-child), .linked:not(.vertical) > spinbutton:not(:last-child):not(.vertical), .linked:not(.vertical) > entry:not(:last-child), .linked:not(.vertical) > button:not(:last-child) {
+.nemo-window .primary-toolbar .linked:not(.vertical) > entry:not(:last-child), .titlebar .linked:not(.vertical) > entry:not(:last-child), .linked:not(.vertical) > spinbutton.vertical:not(:last-child), .linked:not(.vertical) > spinbutton:not(:last-child):not(.vertical), .linked:not(.vertical) > entry:not(:last-child), .linked:not(.vertical) > button:not(:last-child) {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
 }
 
-.linked.vertical > spinbutton.vertical:not(:first-child), .linked.vertical > spinbutton:not(:first-child):not(.vertical), .linked.vertical > entry:not(:first-child), .linked.vertical > button:not(:first-child) {
+.nemo-window .primary-toolbar .linked.vertical > entry:not(:first-child), .titlebar .linked.vertical > entry:not(:first-child), .linked.vertical > spinbutton.vertical:not(:first-child), .linked.vertical > spinbutton:not(:first-child):not(.vertical), .linked.vertical > entry:not(:first-child), .linked.vertical > button:not(:first-child) {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
 
-.linked.vertical > spinbutton.vertical:not(:last-child), .linked.vertical > spinbutton:not(:last-child):not(.vertical), .linked.vertical > entry:not(:last-child), .linked.vertical > button:not(:last-child) {
+.nemo-window .primary-toolbar .linked.vertical > entry:not(:last-child), .titlebar .linked.vertical > entry:not(:last-child), .linked.vertical > spinbutton.vertical:not(:last-child), .linked.vertical > spinbutton:not(:last-child):not(.vertical), .linked.vertical > entry:not(:last-child), .linked.vertical > button:not(:last-child) {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
@@ -1272,6 +1272,86 @@ searchbar > revealer > box {
 /***************
  * Header bars *
  ***************/
+.nemo-window .primary-toolbar button:not(.text-button), headerbar button:not(.suggested-action):not(.destructive-action) {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nemo-window .primary-toolbar .linked:not(.vertical) > button:not(.text-button), headerbar .linked:not(.vertical) > button:not(.suggested-action):not(.destructive-action) {
+  border-radius: 9999px;
+}
+
+.nemo-window .primary-toolbar .linked:not(.vertical) > button:not(:first-child):not(.text-button), headerbar .linked:not(.vertical) > button:not(:first-child):not(.suggested-action):not(.destructive-action), .nemo-window .primary-toolbar .linked:not(.vertical) > button:not(:last-child):not(.text-button), headerbar .linked:not(.vertical) > button:not(:last-child):not(.suggested-action):not(.destructive-action) {
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.nemo-window .primary-toolbar .linked:not(.vertical) > button.image-button:not(.text-button):first-child, headerbar .linked:not(.vertical) > button.image-button:not(.text-button):first-child:not(.suggested-action):not(.destructive-action) {
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.nemo-window .primary-toolbar .linked:not(.vertical) > button.image-button:not(.text-button):last-child, headerbar .linked:not(.vertical) > button.image-button:not(.text-button):last-child:not(.suggested-action):not(.destructive-action) {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.nemo-window .primary-toolbar button:focus:not(.text-button), headerbar button:focus:not(.suggested-action):not(.destructive-action), .nemo-window .primary-toolbar button:hover:not(.text-button), headerbar button:hover:not(.suggested-action):not(.destructive-action), .nemo-window .primary-toolbar button:active:not(.text-button), headerbar button:active:not(.suggested-action):not(.destructive-action), .nemo-window .primary-toolbar button:checked:not(.text-button), headerbar button:checked:not(.suggested-action):not(.destructive-action) {
+  color: white;
+}
+
+.nemo-window .primary-toolbar button:disabled:not(.text-button), headerbar button:disabled:not(.suggested-action):not(.destructive-action) {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.nemo-window .primary-toolbar button:checked:disabled:not(.text-button), headerbar button:checked:disabled:not(.suggested-action):not(.destructive-action) {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nemo-window .primary-toolbar button:backdrop:not(.text-button), headerbar button:backdrop:not(.suggested-action):not(.destructive-action) {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nemo-window .primary-toolbar button:backdrop:focus:not(.text-button), headerbar button:backdrop:focus:not(.suggested-action):not(.destructive-action), .nemo-window .primary-toolbar button:backdrop:hover:not(.text-button), headerbar button:backdrop:hover:not(.suggested-action):not(.destructive-action), .nemo-window .primary-toolbar button:backdrop:active:not(.text-button), headerbar button:backdrop:active:not(.suggested-action):not(.destructive-action) {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nemo-window .primary-toolbar button:backdrop:disabled:not(.text-button), headerbar button:backdrop:disabled:not(.suggested-action):not(.destructive-action) {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.nemo-window .primary-toolbar button:backdrop:checked:not(.text-button), headerbar button:backdrop:checked:not(.suggested-action):not(.destructive-action) {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nemo-window .primary-toolbar button:backdrop:checked:disabled:not(.text-button), headerbar button:backdrop:checked:disabled:not(.suggested-action):not(.destructive-action) {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.nemo-window .primary-toolbar entry, .titlebar entry, spinbutton:not(.vertical), spinbutton.vertical {
+  background-color: rgba(255, 255, 255, 0.04);
+  color: white;
+}
+
+.nemo-window .primary-toolbar entry:disabled, .titlebar entry:disabled, spinbutton:disabled:not(.vertical), spinbutton.vertical:disabled {
+  background-color: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.nemo-window .primary-toolbar entry image, .titlebar entry image, spinbutton:not(.vertical) image, spinbutton.vertical image {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.nemo-window .primary-toolbar entry image:hover, .titlebar entry image:hover, spinbutton:not(.vertical) image:hover, spinbutton.vertical image:hover, .nemo-window .primary-toolbar entry image:active, .titlebar entry image:active, spinbutton:not(.vertical) image:active, spinbutton.vertical image:active {
+  color: white;
+}
+
+.nemo-window .primary-toolbar entry image:disabled, .titlebar entry image:disabled, spinbutton:not(.vertical) image:disabled, spinbutton.vertical image:disabled {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .titlebar {
   transition: background-color 75ms cubic-bezier(0, 0, 0.2, 1), color 75ms cubic-bezier(0, 0, 0.2, 1);
   border-radius: 18px 18px 0 0;
@@ -1319,28 +1399,6 @@ searchbar > revealer > box {
 
 .titlebar headerbar + separator {
   background-color: rgba(255, 255, 255, 0.12);
-}
-
-.titlebar entry {
-  background-color: rgba(255, 255, 255, 0.04);
-  color: white;
-}
-
-.titlebar entry:disabled {
-  background-color: rgba(255, 255, 255, 0.04);
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.titlebar entry image {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.titlebar entry image:hover, .titlebar entry image:active {
-  color: white;
-}
-
-.titlebar entry image:disabled {
-  color: rgba(255, 255, 255, 0.5);
 }
 
 .titlebar .linked:not(.vertical) > entry:not(:only-child) {
@@ -1466,64 +1524,6 @@ searchbar > revealer > box {
 
 .solid-csd .titlebar:dir(rtl), .solid-csd .titlebar:dir(ltr) {
   border-radius: 0;
-}
-
-.nemo-window .primary-toolbar button:not(.text-button), headerbar button:not(.suggested-action):not(.destructive-action) {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.nemo-window .primary-toolbar .linked:not(.vertical) > button:not(.text-button), headerbar .linked:not(.vertical) > button:not(.suggested-action):not(.destructive-action) {
-  border-radius: 9999px;
-}
-
-.nemo-window .primary-toolbar .linked:not(.vertical) > button:not(:first-child):not(.text-button), headerbar .linked:not(.vertical) > button:not(:first-child):not(.suggested-action):not(.destructive-action), .nemo-window .primary-toolbar .linked:not(.vertical) > button:not(:last-child):not(.text-button), headerbar .linked:not(.vertical) > button:not(:last-child):not(.suggested-action):not(.destructive-action) {
-  border-top-left-radius: 9999px;
-  border-bottom-left-radius: 9999px;
-  border-top-right-radius: 9999px;
-  border-bottom-right-radius: 9999px;
-}
-
-.nemo-window .primary-toolbar .linked:not(.vertical) > button.image-button:not(.text-button):first-child, headerbar .linked:not(.vertical) > button.image-button:not(.text-button):first-child:not(.suggested-action):not(.destructive-action) {
-  border-top-left-radius: 9999px;
-  border-bottom-left-radius: 9999px;
-}
-
-.nemo-window .primary-toolbar .linked:not(.vertical) > button.image-button:not(.text-button):last-child, headerbar .linked:not(.vertical) > button.image-button:not(.text-button):last-child:not(.suggested-action):not(.destructive-action) {
-  border-top-right-radius: 9999px;
-  border-bottom-right-radius: 9999px;
-}
-
-.nemo-window .primary-toolbar button:focus:not(.text-button), headerbar button:focus:not(.suggested-action):not(.destructive-action), .nemo-window .primary-toolbar button:hover:not(.text-button), headerbar button:hover:not(.suggested-action):not(.destructive-action), .nemo-window .primary-toolbar button:active:not(.text-button), headerbar button:active:not(.suggested-action):not(.destructive-action), .nemo-window .primary-toolbar button:checked:not(.text-button), headerbar button:checked:not(.suggested-action):not(.destructive-action) {
-  color: white;
-}
-
-.nemo-window .primary-toolbar button:disabled:not(.text-button), headerbar button:disabled:not(.suggested-action):not(.destructive-action) {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.nemo-window .primary-toolbar button:checked:disabled:not(.text-button), headerbar button:checked:disabled:not(.suggested-action):not(.destructive-action) {
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.nemo-window .primary-toolbar button:backdrop:not(.text-button), headerbar button:backdrop:not(.suggested-action):not(.destructive-action) {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.nemo-window .primary-toolbar button:backdrop:focus:not(.text-button), headerbar button:backdrop:focus:not(.suggested-action):not(.destructive-action), .nemo-window .primary-toolbar button:backdrop:hover:not(.text-button), headerbar button:backdrop:hover:not(.suggested-action):not(.destructive-action), .nemo-window .primary-toolbar button:backdrop:active:not(.text-button), headerbar button:backdrop:active:not(.suggested-action):not(.destructive-action) {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.nemo-window .primary-toolbar button:backdrop:disabled:not(.text-button), headerbar button:backdrop:disabled:not(.suggested-action):not(.destructive-action) {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.nemo-window .primary-toolbar button:backdrop:checked:not(.text-button), headerbar button:backdrop:checked:not(.suggested-action):not(.destructive-action) {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.nemo-window .primary-toolbar button:backdrop:checked:disabled:not(.text-button), headerbar button:backdrop:checked:disabled:not(.suggested-action):not(.destructive-action) {
-  color: rgba(255, 255, 255, 0.3);
 }
 
 headerbar {
@@ -2468,7 +2468,7 @@ radio {
 check:checked, check:indeterminate,
 radio:checked,
 radio:indeterminate {
-  color: #8cd5ff;
+  color: #64baff;
 }
 
 check:checked:disabled, check:indeterminate:disabled,
@@ -2637,7 +2637,7 @@ filechooser stack.view scrolledwindow treeview.view radio:checked,
 treeview.view radio:indeterminate,
 window#gnome-system-monitor.background.csd > box.vertical > stack > box.vertical > scrolledwindow treeview.view:not(.progressbar):not(.trough) radio:indeterminate,
 filechooser stack.view scrolledwindow treeview.view radio:indeterminate {
-  color: #8cd5ff;
+  color: #64baff;
 }
 
 treeview.view check:checked:disabled, window#gnome-system-monitor.background.csd > box.vertical > stack > box.vertical > scrolledwindow treeview.view:not(.progressbar):not(.trough) check:checked:disabled, filechooser stack.view scrolledwindow treeview.view check:checked:disabled, treeview.view check:indeterminate:disabled, window#gnome-system-monitor.background.csd > box.vertical > stack > box.vertical > scrolledwindow treeview.view:not(.progressbar):not(.trough) check:indeterminate:disabled, filechooser stack.view scrolledwindow treeview.view check:indeterminate:disabled,
@@ -2969,7 +2969,7 @@ levelbar block.high, levelbar block:not(.empty) {
 }
 
 levelbar block.full {
-  background-color: #8cd5ff;
+  background-color: #64baff;
 }
 
 levelbar block.empty {
@@ -3757,8 +3757,8 @@ XfdesktopIconView.view:active, calendar.raven-calendar:selected, .budgie-popover
   background-color: rgba(50, 129, 234, 0.2);
 }
 
-.nemo-window .nemo-window-pane widget.entry:selected, textview text selection:focus, textview text selection, label selection,
-entry selection, spinbutton:not(.vertical) selection, spinbutton.vertical selection {
+.nemo-window .nemo-window-pane widget.entry:selected, textview text selection:focus, textview text selection, label selection, .nemo-window .primary-toolbar entry selection,
+entry selection, spinbutton:not(.vertical) selection, spinbutton.vertical selection, .titlebar entry selection {
   color: white;
 }
 
@@ -7085,7 +7085,7 @@ widgets main borders color on backdrop windows */
 these are pretty self explicative */
 @define-color warning_color #FDD633;
 @define-color error_color #F28B82;
-@define-color success_color #8cd5ff;
+@define-color success_color #64baff;
 /*
 these colors are exported for the window manager and shouldn't be used in applications,
 read if you used those and something break with a version upgrade you're on your own... */
@@ -7104,150 +7104,4 @@ FIXME this is really an API */
 @define-color budgie_tasklist_indicator_color_attention #FDD633;
 
 @import url("3d-dark.css");
-
-/*****************
- * Title buttons *
- *****************/
- 
- .raven .expander-button, .raven .raven-header:not(.top) button.image-button, widget > box.terminal-titlebar > button.image-button, widget > box.terminal-titlebar > button.image-button.toggle, .terminix-session-sidebar button.tilix-sidebar-close-button,
- .tilix-session-sidebar button.tilix-sidebar-close-button, .nemo-window toolbar.primary-toolbar > toolitem > box.raised > button,
- .nemo-window toolbar.primary-toolbar > toolitem > box.linked.raised > button, .nautilus-window headerbar > revealer > button, .solid-csd headerbar:not(.default-decoration) button.titlebutton, headerbar button.titlebutton, .csd headerbar button.titlebutton, .csd headerbar.default-decoration button.titlebutton,
- .titlebar button.titlebutton, .csd .titlebar button.titlebutton,
- .titlebar.default-decoration button.titlebutton, .csd .titlebar.default-decoration button.titlebutton, row button.image-button, check,
- radio,
- headerbar.default-decoration button.titlebutton,
- headerbar button.suggested-action,
- headerbar button.destructive-action,
- headerbar button:not(.suggested-action):not(.destructive-action),
- button.close,
- button.circular {
-   border-radius: 9999px;
-   -gtk-outline-radius: 9999px;
- }
-
- headerbar,
- .titlebar {
-   padding: 0 14px;
- }
- 
- .solid-csd headerbar:not(.default-decoration) button.titlebutton.close, 
- headerbar button.titlebutton.close, 
- .titlebar button.titlebutton.close {
-   min-width: 12px;
-   min-height: 12px;
-   padding: 0;
-   margin: 0 2px;
-   color: transparent;
-   background-color: rgba(0, 0, 0, 0.3);
-   background-color: #f25056;
-   box-shadow: inset 0 -1px 0 0 alpha(white, 0.2), inset 0 1px 0 0 alpha(white, 0.3), inset 1px 0 0 0 alpha(white, 0.07), inset -1px 0 0 0 alpha(white, 0.07), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);  
-}
-
- .solid-csd headerbar:not(.default-decoration) button.titlebutton.maximize,
- headerbar button.titlebutton.maximize, 
- .titlebar button.titlebutton.maximize {
-   min-width: 12px;
-   min-height: 12px;
-   padding: 0;
-   margin: 0 2px;
-   color: transparent;
-   background-color: rgba(0, 0, 0, 0.3);
-   background-color: #39ea49;
-   box-shadow: inset 0 -1px 0 0 alpha(white, 0.2), inset 0 1px 0 0 alpha(white, 0.3), inset 1px 0 0 0 alpha(white, 0.07), inset -1px 0 0 0 alpha(white, 0.07), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
-}
-
- .solid-csd headerbar:not(.default-decoration) button.titlebutton.minimize, 
- headerbar button.titlebutton.minimize,
- .titlebar button.titlebutton.minimize {
-   min-width: 12px;
-   min-height: 12px;
-   padding: 0;
-   margin: 0 2px;
-   color: transparent;
-   background-color: rgba(0, 0, 0, 0.3);
-   background-color: #fac536;
-   box-shadow: inset 0 -1px 0 0 alpha(white, 0.2), inset 0 1px 0 0 alpha(white, 0.3), inset 1px 0 0 0 alpha(white, 0.07), inset -1px 0 0 0 alpha(white, 0.07), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
-}
-
- #MozillaGtkWidget.background headerbar.titlebar.default-decoration button.titlebutton.close:hover, .solid-csd headerbar:not(.default-decoration) button.titlebutton.close:hover, headerbar button.titlebutton.close:hover, .csd headerbar button.titlebutton.close:hover, headerbar.default-decoration button.titlebutton.close:hover, .csd headerbar.default-decoration button.titlebutton.close:hover,
- .titlebar button.titlebutton.close:hover, .csd .titlebar button.titlebutton.close:hover,
- .titlebar.default-decoration button.titlebutton.close:hover, .csd .titlebar.default-decoration button.titlebutton.close:hover {
-   padding: 2px;
-   margin: -2px 0;
-   background-color: #f25056;
-   color: rgba(255, 255, 255, 0.7);
-   box-shadow: inset 0 -1px 0 0 alpha(white, 0.2), inset 0 1px 0 0 alpha(white, 0.3), inset 1px 0 0 0 alpha(white, 0.07), inset -1px 0 0 0 alpha(white, 0.07), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
-  }
- #MozillaGtkWidget.background headerbar.titlebar.default-decoration button.titlebutton.maximize:hover, .solid-csd headerbar:not(.default-decoration) button.titlebutton.maximize:hover, headerbar button.titlebutton.maximize:hover, .csd headerbar button.titlebutton.maximize:hover, headerbar.default-decoration button.titlebutton.maximize:hover, .csd headerbar.default-decoration button.titlebutton.maximize:hover,
- .titlebar button.titlebutton.maximize:hover, .csd .titlebar button.titlebutton.maximize:hover,
- .titlebar.default-decoration button.titlebutton.maximize:hover, .csd .titlebar.default-decoration button.titlebutton.maximize:hover {
-   padding: 2px;
-   margin: -2px 0;
-   background-color: #39ea49;
-   color: rgba(255, 255, 255, 0.7);
-   box-shadow: inset 0 -1px 0 0 alpha(white, 0.2), inset 0 1px 0 0 alpha(white, 0.3), inset 1px 0 0 0 alpha(white, 0.07), inset -1px 0 0 0 alpha(white, 0.07), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
-  }
- #MozillaGtkWidget.background headerbar.titlebar.default-decoration button.titlebutton.minimize:hover, .solid-csd headerbar:not(.default-decoration) button.titlebutton.minimize:hover, headerbar button.titlebutton.minimize:hover, .csd headerbar button.titlebutton.minimize:hover, headerbar.default-decoration button.titlebutton.minimize:hover, .csd headerbar.default-decoration button.titlebutton.minimize:hover,
- .titlebar button.titlebutton.minimize:hover, .csd .titlebar button.titlebutton.minimize:hover,
- .titlebar.default-decoration button.titlebutton.minimize:hover, .csd .titlebar.default-decoration button.titlebutton.minimize:hover {
-   padding: 2px;
-   margin: -2px 0;
-   background-color: #fac536;
-   color: rgba(255, 255, 255, 0.7);
-   box-shadow: inset 0 -1px 0 0 alpha(white, 0.2), inset 0 1px 0 0 alpha(white, 0.3), inset 1px 0 0 0 alpha(white, 0.07), inset -1px 0 0 0 alpha(white, 0.07), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
-  }
- 
- .solid-csd headerbar:not(.default-decoration) button.titlebutton.close:hover, .solid-csd headerbar:not(.default-decoration) button.titlebutton.maximize:hover, .solid-csd headerbar:not(.default-decoration) button.titlebutton.minimize:hover, headerbar button.titlebutton.close:hover, headerbar button.titlebutton.close:backdrop:hover, headerbar button.titlebutton.maximize:hover, headerbar button.titlebutton.maximize:backdrop:hover, headerbar button.titlebutton.minimize:hover, headerbar button.titlebutton.minimize:backdrop:hover, .csd headerbar button.titlebutton.close:hover, .csd headerbar button.titlebutton.close:backdrop:hover, .csd headerbar button.titlebutton.maximize:hover, .csd headerbar button.titlebutton.maximize:backdrop:hover, .csd headerbar button.titlebutton.minimize:hover, .csd headerbar button.titlebutton.minimize:backdrop:hover, headerbar.default-decoration button.titlebutton.close:hover, headerbar.default-decoration button.titlebutton.close:backdrop:hover, headerbar.default-decoration button.titlebutton.maximize:hover, headerbar.default-decoration button.titlebutton.maximize:backdrop:hover, headerbar.default-decoration button.titlebutton.minimize:hover, headerbar.default-decoration button.titlebutton.minimize:backdrop:hover, .csd headerbar.default-decoration button.titlebutton.close:hover, .csd headerbar.default-decoration button.titlebutton.close:backdrop:hover, .csd headerbar.default-decoration button.titlebutton.maximize:hover, .csd headerbar.default-decoration button.titlebutton.maximize:backdrop:hover, .csd headerbar.default-decoration button.titlebutton.minimize:hover, .csd headerbar.default-decoration button.titlebutton.minimize:backdrop:hover,
- .titlebar button.titlebutton.close:hover,
- .titlebar button.titlebutton.close:backdrop:hover,
- .titlebar button.titlebutton.maximize:hover,
- .titlebar button.titlebutton.maximize:backdrop:hover,
- .titlebar button.titlebutton.minimize:hover,
- .titlebar button.titlebutton.minimize:backdrop:hover, .csd .titlebar button.titlebutton.close:hover, .csd .titlebar button.titlebutton.close:backdrop:hover, .csd .titlebar button.titlebutton.maximize:hover, .csd .titlebar button.titlebutton.maximize:backdrop:hover, .csd .titlebar button.titlebutton.minimize:hover, .csd .titlebar button.titlebutton.minimize:backdrop:hover,
- .titlebar.default-decoration button.titlebutton.close:hover,
- .titlebar.default-decoration button.titlebutton.close:backdrop:hover,
- .titlebar.default-decoration button.titlebutton.maximize:hover,
- .titlebar.default-decoration button.titlebutton.maximize:backdrop:hover,
- .titlebar.default-decoration button.titlebutton.minimize:hover,
- .titlebar.default-decoration button.titlebutton.minimize:backdrop:hover, .csd .titlebar.default-decoration button.titlebutton.close:hover, .csd .titlebar.default-decoration button.titlebutton.close:backdrop:hover, .csd .titlebar.default-decoration button.titlebutton.maximize:hover, .csd .titlebar.default-decoration button.titlebutton.maximize:backdrop:hover, .csd .titlebar.default-decoration button.titlebutton.minimize:hover, .csd .titlebar.default-decoration button.titlebutton.minimize:backdrop:hover {
-  color: transparent;
-  }
- 
- .solid-csd headerbar:not(.default-decoration) button.titlebutton.close:active, .solid-csd headerbar:not(.default-decoration) button.titlebutton.maximize:active, .solid-csd headerbar:not(.default-decoration) button.titlebutton.minimize:active, .solid-csd headerbar:not(.default-decoration) button.titlebutton.close:checked, .solid-csd headerbar:not(.default-decoration) button.titlebutton.maximize:checked, .solid-csd headerbar:not(.default-decoration) button.titlebutton.minimize:checked, .solid-csd headerbar:not(.default-decoration) button.titlebutton.close:backdrop:active, .solid-csd headerbar:not(.default-decoration) button.titlebutton.maximize:backdrop:active, .solid-csd headerbar:not(.default-decoration) button.titlebutton.minimize:backdrop:active, .solid-csd headerbar:not(.default-decoration) button.titlebutton.close:backdrop:checked, .solid-csd headerbar:not(.default-decoration) button.titlebutton.maximize:backdrop:checked, .solid-csd headerbar:not(.default-decoration) button.titlebutton.minimize:backdrop:checked, headerbar button.titlebutton.close:active, headerbar button.titlebutton.close:checked, headerbar button.titlebutton.close:backdrop:active, headerbar button.titlebutton.close:backdrop:checked, headerbar button.titlebutton.maximize:active, headerbar button.titlebutton.maximize:checked, headerbar button.titlebutton.maximize:backdrop:active, headerbar button.titlebutton.maximize:backdrop:checked, headerbar button.titlebutton.minimize:active, headerbar button.titlebutton.minimize:checked, headerbar button.titlebutton.minimize:backdrop:active, headerbar button.titlebutton.minimize:backdrop:checked, .csd headerbar button.titlebutton.close:active, .csd headerbar button.titlebutton.close:checked, .csd headerbar button.titlebutton.close:backdrop:active, .csd headerbar button.titlebutton.close:backdrop:checked, .csd headerbar button.titlebutton.maximize:active, .csd headerbar button.titlebutton.maximize:checked, .csd headerbar button.titlebutton.maximize:backdrop:active, .csd headerbar button.titlebutton.maximize:backdrop:checked, .csd headerbar button.titlebutton.minimize:active, .csd headerbar button.titlebutton.minimize:checked, .csd headerbar button.titlebutton.minimize:backdrop:active, .csd headerbar button.titlebutton.minimize:backdrop:checked, headerbar.default-decoration button.titlebutton.close:active, headerbar.default-decoration button.titlebutton.close:checked, headerbar.default-decoration button.titlebutton.close:backdrop:active, headerbar.default-decoration button.titlebutton.close:backdrop:checked, headerbar.default-decoration button.titlebutton.maximize:active, headerbar.default-decoration button.titlebutton.maximize:checked, headerbar.default-decoration button.titlebutton.maximize:backdrop:active, headerbar.default-decoration button.titlebutton.maximize:backdrop:checked, headerbar.default-decoration button.titlebutton.minimize:active, headerbar.default-decoration button.titlebutton.minimize:checked, headerbar.default-decoration button.titlebutton.minimize:backdrop:active, headerbar.default-decoration button.titlebutton.minimize:backdrop:checked, .csd headerbar.default-decoration button.titlebutton.close:active, .csd headerbar.default-decoration button.titlebutton.close:checked, .csd headerbar.default-decoration button.titlebutton.close:backdrop:active, .csd headerbar.default-decoration button.titlebutton.close:backdrop:checked, .csd headerbar.default-decoration button.titlebutton.maximize:active, .csd headerbar.default-decoration button.titlebutton.maximize:checked, .csd headerbar.default-decoration button.titlebutton.maximize:backdrop:active, .csd headerbar.default-decoration button.titlebutton.maximize:backdrop:checked, .csd headerbar.default-decoration button.titlebutton.minimize:active, .csd headerbar.default-decoration button.titlebutton.minimize:checked, .csd headerbar.default-decoration button.titlebutton.minimize:backdrop:active, .csd headerbar.default-decoration button.titlebutton.minimize:backdrop:checked,
- .titlebar button.titlebutton.close:active,
- .titlebar button.titlebutton.close:checked,
- .titlebar button.titlebutton.close:backdrop:active,
- .titlebar button.titlebutton.close:backdrop:checked,
- .titlebar button.titlebutton.maximize:active,
- .titlebar button.titlebutton.maximize:checked,
- .titlebar button.titlebutton.maximize:backdrop:active,
- .titlebar button.titlebutton.maximize:backdrop:checked,
- .titlebar button.titlebutton.minimize:active,
- .titlebar button.titlebutton.minimize:checked,
- .titlebar button.titlebutton.minimize:backdrop:active,
- .titlebar button.titlebutton.minimize:backdrop:checked, .csd .titlebar button.titlebutton.close:active, .csd .titlebar button.titlebutton.close:checked, .csd .titlebar button.titlebutton.close:backdrop:active, .csd .titlebar button.titlebutton.close:backdrop:checked, .csd .titlebar button.titlebutton.maximize:active, .csd .titlebar button.titlebutton.maximize:checked, .csd .titlebar button.titlebutton.maximize:backdrop:active, .csd .titlebar button.titlebutton.maximize:backdrop:checked, .csd .titlebar button.titlebutton.minimize:active, .csd .titlebar button.titlebutton.minimize:checked, .csd .titlebar button.titlebutton.minimize:backdrop:active, .csd .titlebar button.titlebutton.minimize:backdrop:checked,
- .titlebar.default-decoration button.titlebutton.close:active,
- .titlebar.default-decoration button.titlebutton.close:checked,
- .titlebar.default-decoration button.titlebutton.close:backdrop:active,
- .titlebar.default-decoration button.titlebutton.close:backdrop:checked,
- .titlebar.default-decoration button.titlebutton.maximize:active,
- .titlebar.default-decoration button.titlebutton.maximize:checked,
- .titlebar.default-decoration button.titlebutton.maximize:backdrop:active,
- .titlebar.default-decoration button.titlebutton.maximize:backdrop:checked,
- .titlebar.default-decoration button.titlebutton.minimize:active,
- .titlebar.default-decoration button.titlebutton.minimize:checked,
- .titlebar.default-decoration button.titlebutton.minimize:backdrop:active,
- .titlebar.default-decoration button.titlebutton.minimize:backdrop:checked, .csd .titlebar.default-decoration button.titlebutton.close:active, .csd .titlebar.default-decoration button.titlebutton.close:checked, .csd .titlebar.default-decoration button.titlebutton.close:backdrop:active, .csd .titlebar.default-decoration button.titlebutton.close:backdrop:checked, .csd .titlebar.default-decoration button.titlebutton.maximize:active, .csd .titlebar.default-decoration button.titlebutton.maximize:checked, .csd .titlebar.default-decoration button.titlebutton.maximize:backdrop:active, .csd .titlebar.default-decoration button.titlebutton.maximize:backdrop:checked, .csd .titlebar.default-decoration button.titlebutton.minimize:active, .csd .titlebar.default-decoration button.titlebutton.minimize:checked, .csd .titlebar.default-decoration button.titlebutton.minimize:backdrop:active, .csd .titlebar.default-decoration button.titlebutton.minimize:backdrop:checked {
-   color: transparent;
-  }
- 
- .solid-csd headerbar:not(.default-decoration) button.titlebutton.close:backdrop, .solid-csd headerbar:not(.default-decoration) button.titlebutton.maximize:backdrop, .solid-csd headerbar:not(.default-decoration) button.titlebutton.minimize:backdrop, headerbar button.titlebutton.close:backdrop, headerbar button.titlebutton.maximize:backdrop, headerbar button.titlebutton.minimize:backdrop, .csd headerbar button.titlebutton.close:backdrop, .csd headerbar button.titlebutton.maximize:backdrop, .csd headerbar button.titlebutton.minimize:backdrop, headerbar.default-decoration button.titlebutton.close:backdrop, headerbar.default-decoration button.titlebutton.maximize:backdrop, headerbar.default-decoration button.titlebutton.minimize:backdrop, .csd headerbar.default-decoration button.titlebutton.close:backdrop, .csd headerbar.default-decoration button.titlebutton.maximize:backdrop, .csd headerbar.default-decoration button.titlebutton.minimize:backdrop,
- .titlebar button.titlebutton.close:backdrop,
- .titlebar button.titlebutton.maximize:backdrop,
- .titlebar button.titlebutton.minimize:backdrop, .csd .titlebar button.titlebutton.close:backdrop, .csd .titlebar button.titlebutton.maximize:backdrop, .csd .titlebar button.titlebutton.minimize:backdrop,
- .titlebar.default-decoration button.titlebutton.close:backdrop,
- .titlebar.default-decoration button.titlebutton.maximize:backdrop,
- .titlebar.default-decoration button.titlebutton.minimize:backdrop, .csd .titlebar.default-decoration button.titlebutton.close:backdrop, .csd .titlebar.default-decoration button.titlebutton.maximize:backdrop, .csd .titlebar.default-decoration button.titlebutton.minimize:backdrop {
-   color: transparent;
-   background-color: rgba(0, 0, 0, 0.12);
-  }
+@import url("title-buttons.css");
