@@ -3851,7 +3851,7 @@ stage {
 
 #dashtodockContainer .app-well-app .overview-icon,
 #dashtodockContainer .show-apps .overview-icon {
-  padding: 8px;
+  padding: 6px;
   background-size: contain;
 }
 

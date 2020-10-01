@@ -24,4 +24,10 @@ To install themes :
 ![MacOS-3D](preview/5.png?raw=true)
 ![MacOS-3D](preview/6.png?raw=true)
 
+## Donate
+
+You can support this open source project by making a voluntary payment:
+
+The MacOS-3D theme is available for free. if you're enjoying the MacOS-3D theme, feel free to buy me a cofee :) https://www.paypal.com/paypalme/abhishekzambare/
+
 
