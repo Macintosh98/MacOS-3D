@@ -243,6 +243,43 @@ selection {
   box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
 }
 
+avatar {
+  background-color: @accent_color_300;
+  border-color: @accent_color_700;
+  color: @accent_color_900; }
+  avatar.color1 {
+    background-color: #ed5353;
+    border-color: #a10705;
+    color: #7a0000; }
+  avatar.color2 {
+    background-color: #ffa154;
+    border-color: #cc3b02;
+    color: #a62100; }
+  avatar.color3 {
+    background-color: #ffe16b;
+    border-color: #ad5f00;
+    color: #ad5f00; }
+  avatar.color4 {
+    background-color: #9bdb4d;
+    border-color: #3a9104;
+    color: #206b00; }
+  avatar.color5 {
+    background-color: #64baff;
+    border-color: #0d52bf;
+    color: #002e99; }
+  avatar.color6 {
+    background-color: #f4679d;
+    border-color: #0d52bf;
+    color: #910e38; }
+  avatar.color7 {
+    background-color: #cd9ef7;
+    border-color: #7239b3;
+    color: #452981; }
+  avatar.color8 {
+    background-color: #667885;
+    border-color: #273445;
+    color: #0e141f; }
+
 .error {
   color: @error_color; 
 }
@@ -254,6 +291,28 @@ selection {
 .warning {
   color: @warning_color; 
 }
+
+.badge {
+  background-image: linear-gradient(to bottom, #ed5353, #c6262e);
+  border: 1px solid #a10705;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 1px 0 0 rgba(255, 255, 255, 0.25), inset 0 -1px 0 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-weight: 700;
+  min-height: 1.8333333343rem;
+  min-width: 1.8333333343rem;
+  text-shadow: 0 1px 1px #7a0000;
+  background-clip: padding-box;
+  border-color: rgba(0, 0, 0, 0.75); }
+  .sidebar .badge, treeview.sidebar .badge {
+    background-color: alpha(@text_color, 0.1);
+    background-image: none;
+    border-width: 0;
+    box-shadow: none;
+    color: alpha(@text_color, 0.7);
+    margin: 0 3px;
+    padding: 0 6px;
+    text-shadow: none; 
+  }
 
 button {
   background-clip: padding-box;
@@ -1096,6 +1155,18 @@ paned.horizontal > separator {
   min-width: 0.6666666677rem; 
 }
 
+paned.horizontal > separator {
+  background-image: linear-gradient(to right, @menu_separator 1px, @menu_separator_shadow 1px, @menu_separator_shadow 2px, transparent 2px);
+  margin-right: -8px;
+  min-width: 9px; 
+}
+
+paned.vertical > separator {
+  background-image: linear-gradient(to bottom, @menu_separator 1px, @menu_separator_shadow 1px, @menu_separator_shadow 2px, transparent 2px);
+  margin-bottom: -8px;
+  min-height: 9px; 
+}
+
 popover {
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.75);
@@ -1545,6 +1616,12 @@ switch {
   }
     switch:checked:not(.mode-switch):not(:backdrop) slider {
       box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px rgba(0, 0, 0, 0.5), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
+    }
+    switch:checked:not(.mode-switch):not(:backdrop):disabled {
+      box-shadow: 0 1px 0 0 alpha(@highlight_color, 0.3), inset 0 1px 1px rgba(0, 0, 0, 0.05);
+      background-image: none;
+      background-color: mix (@theme_bg_color, @accent_color, 0.5);
+      border-color: shade (mix (@theme_bg_color, @accent_color, 0.5), 0.5); 
     }
   switch image {
     color: transparent; 
