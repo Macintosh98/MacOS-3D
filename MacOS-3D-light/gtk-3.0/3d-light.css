@@ -91,7 +91,7 @@ progressbar.horizontal trough, levelbar.horizontal block, check,
 radio, .linked button.flat, .linked .sidebar .inline-toolbar button, .linked .sidebar actionbar.flat button,
 .linked .sidebar .bottom-toolbar.flat button,
 .emoji-picker stack .linked .sidebar box > box.horizontal button.bottom-toolbar button, .sidebar .inline-toolbar .linked button, .sidebar actionbar.flat .linked button,
-.sidebar .bottom-toolbar.flat .linked button, .linked .sidebar .emoji-picker stack box > box.horizontal button, .sidebar .emoji-picker stack box > box.horizontal .linked button, .linked .emoji-picker stack .sidebar box > box.horizontal button, .emoji-picker stack .sidebar box > box.horizontal .linked button, .linked button.image-button, button.circular.image-button, button.model.image-button, button.raised.image-button, button {
+.sidebar .bottom-toolbar.flat .linked button, .linked .sidebar .emoji-picker stack box > box.horizontal button, .sidebar .emoji-picker stack box > box.horizontal .linked button, .linked .emoji-picker stack .sidebar box > box.horizontal button, .emoji-picker stack .sidebar box > box.horizontal .linked button, .linked button.image-button, button.circular.image-button, button.model.image-button, button.raised.image-button, button, avatar {
   background-image: linear-gradient(to bottom, alpha(@highlight_color, 0.2), rgba(255, 255, 255, 0)); 
 }
   assistant .titlebar:backdrop,
@@ -102,7 +102,7 @@ radio, .linked button.flat, .linked .sidebar .inline-toolbar button, .linked .si
   radio:backdrop, .linked button.flat:backdrop, .linked .sidebar .inline-toolbar button:backdrop, .linked .sidebar actionbar.flat button:backdrop,
   .linked .sidebar .bottom-toolbar.flat button:backdrop,
   .emoji-picker stack .linked .sidebar box > box.horizontal button.bottom-toolbar button:backdrop, .sidebar .inline-toolbar .linked button:backdrop, .sidebar actionbar.flat .linked button:backdrop,
-  .sidebar .bottom-toolbar.flat .linked button:backdrop, .linked .sidebar .emoji-picker stack box > box.horizontal button:backdrop, .sidebar .emoji-picker stack box > box.horizontal .linked button:backdrop, .linked .emoji-picker stack .sidebar box > box.horizontal button:backdrop, .emoji-picker stack .sidebar box > box.horizontal .linked button:backdrop, .linked button.image-button:backdrop, button.circular.image-button:backdrop, button.model.image-button:backdrop, button.raised.image-button:backdrop, button:backdrop {
+  .sidebar .bottom-toolbar.flat .linked button:backdrop, .linked .sidebar .emoji-picker stack box > box.horizontal button:backdrop, .sidebar .emoji-picker stack box > box.horizontal .linked button:backdrop, .linked .emoji-picker stack .sidebar box > box.horizontal button:backdrop, .emoji-picker stack .sidebar box > box.horizontal .linked button:backdrop, .linked button.image-button:backdrop, button.circular.image-button:backdrop, button.model.image-button:backdrop, button.raised.image-button:backdrop, button:backdrop , avatar:backdrop{
     background-image: linear-gradient(to bottom, alpha(@highlight_color, 0.35), alpha(@highlight_color, 0.3)); 
   }
 
@@ -230,47 +230,74 @@ selection {
 .circular {
 }
 
-.avatar {
+.avatar,avatar {
   border: 1px solid rgba(0, 0, 0, 0.35);
   box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
 }
 
 avatar {
   background-color: @accent_color_300;
-  border-color: @accent_color_700;
+  border-color: alpha(@accent_color_500, 0.5);
   color: @accent_color_900; }
   avatar.color1 {
-    background-color: #ed5353;
-    border-color: #a10705;
-    color: #7a0000; }
+    background-color: #64baff;
+    border-color: rgba(54, 137, 230, 0.5);
+    color: #002e99; }
   avatar.color2 {
-    background-color: #ffa154;
-    border-color: #cc3b02;
-    color: #a62100; }
+    background-color: #8cd5ff;
+    border-color: rgba(100, 186, 255, 0.5);
+    color: #0d52bf; }
   avatar.color3 {
-    background-color: #ffe16b;
-    border-color: #ad5f00;
-    color: #ad5f00; }
+    background-color: #43d6b5;
+    border-color: rgba(40, 188, 163, 0.5);
+    color: #007367; }
   avatar.color4 {
     background-color: #9bdb4d;
-    border-color: #3a9104;
+    border-color: rgba(104, 183, 35, 0.5);
     color: #206b00; }
   avatar.color5 {
-    background-color: #64baff;
-    border-color: #0d52bf;
-    color: #002e99; }
+    background-color: #f9c440;
+    border-color: rgba(212, 142, 21, 0.5);
+    color: #ad5f00; }
   avatar.color6 {
-    background-color: #f4679d;
-    border-color: #0d52bf;
-    color: #910e38; }
+    background-color: #fcb34a;
+    border-color: rgba(228, 129, 31, 0.5);
+    color: #aa4000; }
   avatar.color7 {
-    background-color: #cd9ef7;
-    border-color: #7239b3;
-    color: #452981; }
+    background-color: #ffa154;
+    border-color: rgba(243, 115, 41, 0.5);
+    color: #a62100; }
   avatar.color8 {
+    background-color: #ed5353;
+    border-color: rgba(198, 38, 46, 0.5);
+    color: #7a0000; }
+  avatar.color9 {
+    background-color: #f4679d;
+    border-color: rgba(222, 62, 128, 0.5);
+    color: #910e38; }
+  avatar.color10 {
+    background-color: #cd9ef7;
+    border-color: rgba(165, 109, 226, 0.5);
+    color: #452981; }
+  avatar.color11 {
+    background-color: #6d78db;
+    border-color: rgba(89, 96, 209, 0.5);
+    color: #232c8d; }
+  avatar.color12 {
+    background-color: #d1c288;
+    border-color: rgba(181, 140, 66, 0.5);
+    color: #895818; }
+  avatar.color13 {
+    background-color: #8a715e;
+    border-color: rgba(113, 83, 68, 0.5);
+    color: #3d211b; }
+  avatar.color14 {
     background-color: #667885;
-    border-color: #273445;
+    border-color: rgba(72, 90, 108, 0.5);
     color: #0e141f; }
+  avatar.image {
+    border-color: rgba(0, 0, 0, 0.2);
+    background: none; }
 
 .error {
   color: @error_color; 
