@@ -193,6 +193,46 @@ label.h4, .emoji-picker box.vertical > label,
 :link {
   color: mix(@accent_color, white, 0.33); 
 }
+.accent.red,
+.link.red,
+:link.red {
+  color: #c6262e; }
+.accent.orange,
+.link.orange,
+:link.orange {
+  color: #cc3b02; }
+.accent.yellow,
+.link.yellow,
+:link.yellow {
+  color: #c1770b; }
+.accent.green,
+.link.green,
+:link.green {
+  color: #2d7e02; }
+.accent.blue,
+.link.blue,
+:link.blue {
+  color: #226ed3; }
+.accent.purple,
+.link.purple,
+:link.purple {
+  color: #8c53cb; }
+.accent.brown,
+.link.brown,
+:link.brown {
+  color: #8a715e; }
+.accent.mint,
+.link.mint,
+:link.mint {
+  color: #0e9a83; }
+.accent.pink,
+.link.pink,
+:link.pink {
+  color: #cd316f; }
+.accent.slate,
+.link.slate,
+:link.slate {
+  color: #5f717f; }
 
 .dim-label,
 :visited {
