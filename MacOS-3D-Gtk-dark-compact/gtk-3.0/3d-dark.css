@@ -73,7 +73,7 @@
 @define-color SLATE_900 #0e141f;
 @define-color BLACK_100 #666;
 @define-color BLACK_300 #4d4d4d;
-@define-color BLACK_500 #212121;
+@define-color BLACK_500 #333;
 @define-color BLACK_700 #1a1a1a;
 @define-color BLACK_900 #000;
 /* Accent Shades */
@@ -132,7 +132,7 @@ entry.spin:dir(rtl) image:first-child {
 
 @define-color highlight_color white;
 @define-color highlight_color rgba(255, 255, 255, 0.2);
-@define-color color_primary #2c2c2c;
+@define-color color_primary #3a3a3a;
 @define-color placeholder_text_color #cecece;
 @define-color error_color #ed5353;
 @define-color success_color #9bdb4d;
@@ -145,11 +145,11 @@ entry.spin:dir(rtl) image:first-child {
 @define-color menu_separator_shadow rgba(255, 255, 255, 0.05);
 @define-color selected_bg_color alpha(shade(@accent_color, 0.85), 0.5);
 @define-color selected_fg_color mix(shade(@accent_color, 1.1), white, 0.75);
-@define-color base_color #2c2c2c;
-@define-color theme_base_color #2c2c2c;
+@define-color base_color #3a3a3a;
+@define-color theme_base_color #3a3a3a;
 @define-color borders rgba(0, 0, 0, 0.75);
-@define-color theme_bg_color #212121;
-@define-color content_view_bg #212121;
+@define-color theme_bg_color #333;
+@define-color content_view_bg #333;
 @define-color fg_color white;
 @define-color theme_fg_color white;
 @define-color insensitive_fg_color #999999;
@@ -252,10 +252,10 @@ label:disabled {
 }
 
 .keycap {
-  background-color: #212121;
+  background-color: #333;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), alpha(@highlight_color, 0.2));
   border: 1px solid rgba(0, 0, 0, 0.75);
-  box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), inset 0 -1px 0 0 #2c2c2c, 0 1px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), inset 0 -1px 0 0 #3a3a3a, 0 1px 2px rgba(0, 0, 0, 0.05);
   font-size: 85%;
   min-width: 1.000000001rem;
 }
@@ -392,8 +392,8 @@ avatar {
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 1px 0 0 rgba(255, 255, 255, 0.25), inset 0 -1px 0 0 rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.3);
   color: white;
   font-weight: 700;
-  min-height: 1.8212121212121343rem;
-  min-width: 1.8212121212121343rem;
+  min-height: 1.8333333343rem;
+  min-width: 1.8333333343rem;
   text-shadow: 0 1px 1px #7a0000;
   border-color: rgba(0, 0, 0, 0.75); 
 }
@@ -500,8 +500,8 @@ button {
   button.color overlay {
   }
   button arrow {
-    min-width: 1.2121212121213343rem;
-    min-height: 1.2121212121213343rem;
+    min-width: 1.3333333343rem;
+    min-height: 1.3333333343rem;
     -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); 
   }
   button label {
@@ -516,12 +516,12 @@ button {
 }
 
 .card {
-  background-color: #2c2c2c;
+  background-color: #3a3a3a;
   box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 3px 4px rgba(0, 0, 0, 0.25), 0 3px 3px -3px rgba(0, 0, 0, 0.45);
   transition: background 100ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
   .card.collapsed {
-    background-color: #212121;
+    background-color: #333;
     box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.42), 0 1px 2px rgba(0, 0, 0, 0.44);
     transition: background 100ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   }
@@ -548,7 +548,7 @@ radio {
     check:checked:backdrop:not(:disabled):not(.colorbutton),
     radio:checked:backdrop:not(:disabled):not(.colorbutton) {
       background-image: none;
-      background-color: #2c2c2c;
+      background-color: #3a3a3a;
       -gtk-icon-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); 
     }
   check:disabled,
@@ -702,11 +702,11 @@ colorchooser {
     }
     colorchooser colorswatch.dark overlay {
       color: white;
-      -gtk-icon-shadow: 0 0.0821212121212143rem 0.1666666677rem rgba(0, 0, 0, 0.3); 
+      -gtk-icon-shadow: 0 0.0833333343rem 0.1666666677rem rgba(0, 0, 0, 0.3); 
     }
     colorchooser colorswatch.light overlay {
       color: rgba(0, 0, 0, 0.6);
-      -gtk-icon-shadow: 0 0.0821212121212143rem 0.0821212121212143rem rgba(255, 255, 255, 0.2); 
+      -gtk-icon-shadow: 0 0.0833333343rem 0.0833333343rem rgba(255, 255, 255, 0.2); 
     }
   colorchooser grid:nth-child(2) colorswatch,
   colorchooser box box colorswatch {
@@ -724,8 +724,8 @@ colorchooser {
 }
 
 .emoji-picker box.vertical > label {
-  margin-left: 0.5821212121212143rem;
-  margin-right: 0.5821212121212143rem; 
+  margin-left: 0.5833333343rem;
+  margin-right: 0.5833333343rem; 
 }
 
 .emoji-picker .emoji {
@@ -755,7 +755,7 @@ colorchooser {
   }
 
 spinbutton, entry {
-  background-color: #2c2c2c;
+  background-color: #3a3a3a;
   border: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 0 0 alpha(@highlight_color, 0.3), inset 0 1px 1px rgba(0, 0, 0, 0.05), inset 0 0 1px 1px rgba(0, 0, 0, 0.05);
   color: @fg_color; 
@@ -830,7 +830,7 @@ infobar revealer > box {
   background-image: -gtk-icontheme("dialog-information-symbolic");
   background-size: 16px;
   background-repeat: no-repeat;
-  border-color: #2c2c2c;
+  border-color: #3a3a3a;
   border-style: solid;
   border-width: 0 0 1px;
   box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07); 
@@ -894,7 +894,7 @@ levelbar block {
     background-color: #9bdb4d; 
   }
   levelbar block.filled:backdrop {
-    background-color: #2c2c2c; 
+    background-color: #3a3a3a; 
   }
   levelbar block.empty {
     background-color: #404040; 
@@ -957,7 +957,7 @@ levelbar.vertical block {
 }
 
 list {
-  background-color: #2c2c2c; 
+  background-color: #3a3a3a; 
 }
   popover list {
     background-color: transparent; 
@@ -975,7 +975,7 @@ list {
     background-color: #373737; 
   }
   list.content > row:not(.expander):not(:active):not(:hover):not(:selected), list.content > row:not(.expander):not(:active):hover:not(.activatable):not(:selected), list.content > row.expander row.header:not(:active):not(:hover):not(:selected), list.content > row.expander row.header:not(:active):hover:not(.activatable):not(:selected) {
-    background-color: #2c2c2c; 
+    background-color: #3a3a3a; 
   }
   list.content > row:not(.expander):not(:active):hover.activatable:not(:selected), list.content > row.expander row.header:not(:active):hover.activatable:not(:selected) {
     background-color: #373737; 
@@ -1009,7 +1009,7 @@ menubar > menuitem {
 popover, menu,
 window.menu,
 window.popup {
-  background-color: #212121;
+  background-color: #333;
   color: white; 
 }
   popover image, menu image,
@@ -1220,19 +1220,19 @@ notebook header {
   background-color: #2d2d2d; 
 }
   notebook header.top {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(100% - 0.1666666677rem), rgba(0, 0, 0, 0.05) calc(100% - 0.0821212121212143rem), rgba(0, 0, 0, 0.15)); 
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(100% - 0.1666666677rem), rgba(0, 0, 0, 0.05) calc(100% - 0.0833333343rem), rgba(0, 0, 0, 0.15)); 
   }
   notebook header.bottom {
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(100% - 0.1666666677rem), rgba(0, 0, 0, 0.05) calc(100% - 0.0821212121212143rem), rgba(0, 0, 0, 0.15)); 
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(100% - 0.1666666677rem), rgba(0, 0, 0, 0.05) calc(100% - 0.0833333343rem), rgba(0, 0, 0, 0.15)); 
   }
   notebook header.right {
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(100% - 0.1666666677rem), rgba(0, 0, 0, 0.05) calc(100% - 0.0821212121212143rem), rgba(0, 0, 0, 0.15)); 
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(100% - 0.1666666677rem), rgba(0, 0, 0, 0.05) calc(100% - 0.0833333343rem), rgba(0, 0, 0, 0.15)); 
   }
   notebook header.left {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(100% - 0.1666666677rem), rgba(0, 0, 0, 0.05) calc(100% - 0.0821212121212143rem), rgba(0, 0, 0, 0.15)); 
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) calc(100% - 0.1666666677rem), rgba(0, 0, 0, 0.05) calc(100% - 0.0833333343rem), rgba(0, 0, 0, 0.15)); 
   }
   notebook header:backdrop {
-    background-color: #212121; 
+    background-color: #333; 
   }
   notebook header > box > button.image-button,
   notebook header > button.image-button {
@@ -1240,7 +1240,7 @@ notebook header {
   }
 
 notebook viewport {
-  background-color: #2c2c2c; 
+  background-color: #3a3a3a; 
 }
 
 tab {
@@ -1254,18 +1254,18 @@ tab {
     margin: 0 0.250000001rem; 
   }
   tab:hover:not(:checked) {
-    background-color: #2c2c2c; 
+    background-color: #3a3a3a; 
   }
   tab:checked {
-    background-color: #2c2c2c;
+    background-color: #3a3a3a;
     box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.07), 0 1px 2px rgba(0, 0, 0, 0.08); 
   }
     tab:checked:backdrop {
-      background-color: #212121; 
+      background-color: #333; 
     }
 
 window.notification .draw-area {
-  background-color: #212121;
+  background-color: #333;
   box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px rgba(0, 0, 0, 0.75), 0 3px 8px 2px rgba(0, 0, 0, 0.2), 0 5px 5px -3px rgba(0, 0, 0, 0.5), 0 8px 5px 1px rgba(0, 0, 0, 0.2); 
 }
   window.notification .draw-area image {
@@ -1322,10 +1322,10 @@ popover {
     margin-right: -1px; 
   }
   popover undershoot.top {
-    background: linear-gradient(#212121 0%, rgba(51, 51, 51, 0) 50%); 
+    background: linear-gradient(#333 0%, rgba(51, 51, 51, 0) 50%); 
   }
   popover undershoot.bottom {
-    background: linear-gradient(rgba(51, 51, 51, 0) 50%, #212121 100%); 
+    background: linear-gradient(rgba(51, 51, 51, 0) 50%, #333 100%); 
   }
 
 progressbar {
@@ -1339,7 +1339,7 @@ progressbar {
     box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07);
   }
     progressbar progress:backdrop {
-      background-color: #2c2c2c; 
+      background-color: #3a3a3a; 
     }
   progressbar trough {
     background-color: #404040;
@@ -1568,7 +1568,7 @@ treeview.sidebar .view:hover, .sidebar list row:hover {
 }
 
 treeview.sidebar .view:selected, .sidebar list row:selected {
-  background-color: #2c2c2c;
+  background-color: #3a3a3a;
   color: white; 
 }
 
@@ -1754,8 +1754,8 @@ switch {
     min-width: 2.000000001rem; 
   }
   switch.mode-switch slider {
-    min-height: 1.2121212121213343rem;
-    min-width: 1.2121212121213343rem; 
+    min-height: 1.3333333343rem;
+    min-width: 1.3333333343rem; 
   }
   switch:disabled {
     box-shadow: 0 1px 0 0 alpha(@highlight_color, 0.3), inset 0 1px 1px rgba(0, 0, 0, 0.05); 
@@ -1820,7 +1820,7 @@ switch {
     }
   .app-notification label,
   .app-notification.frame label {
-    color: #2c2c2c;
+    color: #3a3a3a;
     text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6); 
   }
 
@@ -1829,7 +1829,7 @@ switch {
 .sidebar .inline-toolbar button.bottom-toolbar,
 .sidebar .emoji-picker stack box > box.horizontal button.bottom-toolbar,
 .emoji-picker stack .sidebar box > box.horizontal button.bottom-toolbar, .emoji-picker stack box > box.horizontal {
-  background-color: #212121;
+  background-color: #333;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 1px, rgba(0, 0, 0, 0.07) 1px, transparent 0.250000001rem);
   box-shadow: none; 
 }
@@ -1853,8 +1853,8 @@ switch {
 actionbar,
 .bottom-toolbar {
   background-color: @color_primary;
-  box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.7), 0.4), 0 -0.0821212121212143rem 0.1666666677rem rgba(0, 0, 0, 0.2);
-  box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.5), 0.5), 0 -0.0821212121212143rem 0.0821212121212143rem rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.7), 0.4), 0 -0.0833333343rem 0.1666666677rem rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.5), 0.5), 0 -0.0833333343rem 0.0833333343rem rgba(0, 0, 0, 0.2);
   /* Workaround for border */ 
 }
   revealer > actionbar, revealer > .bottom-toolbar {
@@ -1862,7 +1862,7 @@ actionbar,
   }
   actionbar:backdrop,
   .bottom-toolbar:backdrop {
-    box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.7), 0.3), 0 -0.0821212121212143rem 0.0821212121212143rem rgba(0, 0, 0, 0.15); 
+    box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.7), 0.3), 0 -0.0833333343rem 0.0833333343rem rgba(0, 0, 0, 0.15); 
   }
 
 .search-bar {
@@ -1878,8 +1878,8 @@ tooltip.background,
   .overlay-bar label,
   .overlay-bar spinner {
     color: white;
-    text-shadow: 0 0.0821212121212143rem 0.1666666677rem rgba(0, 0, 0, 0.6);
-    -gtk-icon-shadow: 0 0.0821212121212143rem 0.1666666677rem rgba(0, 0, 0, 0.6); 
+    text-shadow: 0 0.0833333343rem 0.1666666677rem rgba(0, 0, 0, 0.6);
+    -gtk-icon-shadow: 0 0.0833333343rem 0.1666666677rem rgba(0, 0, 0, 0.6); 
   }
 
 tooltip.csd decoration,
@@ -1938,7 +1938,7 @@ scrolledwindow > viewport.frame {
 }
 
 .view {
-  background-color: #2c2c2c;
+  background-color: #3a3a3a;
   color: white; 
 }
   .view.terminal {
@@ -1958,7 +1958,7 @@ rubberband {
 
 .background,
 .gtkstyle-fallback {
-  background-color: #212121;
+  background-color: #333;
   color: white; 
 }
 
@@ -2028,13 +2028,13 @@ window:not(.popup):not(.menu).csd {
   assistant.csd .titlebar,
   printdialog.csd .titlebar,
   window:not(.popup):not(.menu).csd .titlebar {
-    box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.7), 0.4), 0 0.0821212121212143rem 0.1666666677rem rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.5), 0.5), 0 0.0821212121212143rem 0.1666666677rem rgba(0, 0, 0, 0.2); 
+    box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.7), 0.4), 0 0.0833333343rem 0.1666666677rem rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.5), 0.5), 0 0.0833333343rem 0.1666666677rem rgba(0, 0, 0, 0.2); 
   }
     assistant.csd .titlebar:backdrop,
     printdialog.csd .titlebar:backdrop,
     window:not(.popup):not(.menu).csd .titlebar:backdrop {
-      box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.7), 0.3), 0 0.0821212121212143rem 0.1666666677rem rgba(0, 0, 0, 0.15); 
+      box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.7), 0.3), 0 0.0833333343rem 0.1666666677rem rgba(0, 0, 0, 0.15); 
     }
     assistant.csd .titlebar.default-decoration,
     printdialog.csd .titlebar.default-decoration,
@@ -2065,7 +2065,7 @@ window:not(.popup):not(.menu).csd {
     .sidebar actionbar.flat window:not(.popup):not(.menu).csd button.titlebar,
     window:not(.popup):not(.menu).csd .sidebar .bottom-toolbar.flat button.titlebar,
     .sidebar .bottom-toolbar.flat window:not(.popup):not(.menu).csd button.titlebar {
-      background: #212121;
+      background: #333;
       box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.75), -1px 0 0 0 rgba(0, 0, 0, 0.75), 0 -1px 0 0 rgba(0, 0, 0, 0.75), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07); 
     }
 
@@ -2125,13 +2125,13 @@ window:not(.popup):not(.menu).unified {
   assistant.unified .titlebar,
   printdialog.unified .titlebar,
   window:not(.popup):not(.menu).unified .titlebar {
-    box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.7), 0.4), 0 0.0821212121212143rem 0.1666666677rem rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.5), 0.5), 0 0.0821212121212143rem 0.1666666677rem rgba(0, 0, 0, 0.2); 
+    box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.7), 0.4), 0 0.0833333343rem 0.1666666677rem rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.5), 0.5), 0 0.0833333343rem 0.1666666677rem rgba(0, 0, 0, 0.2); 
   }
     assistant.unified .titlebar:backdrop:not(.flat),
     printdialog.unified .titlebar:backdrop:not(.flat),
     window:not(.popup):not(.menu).unified .titlebar:backdrop:not(.flat) {
-      box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.7), 0.3), 0 0.0821212121212143rem 0.1666666677rem rgba(0, 0, 0, 0.15); 
+      box-shadow: inset 0 -1px 0 0 alpha(@highlight_color, 0.2), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07), 0 0 0 1px alpha(shade(@color_primary, 0.7), 0.3), 0 0.0833333343rem 0.1666666677rem rgba(0, 0, 0, 0.15); 
     }
 
 assistant .titlebar,
@@ -2187,7 +2187,7 @@ messagedialog {
     }
   dialog > .titlebar,
   messagedialog > .titlebar {
-    background-color: #212121;
+    background-color: #333;
     box-shadow: inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07); 
   }
     dialog > .titlebar label.title,
@@ -2203,8 +2203,10 @@ messagedialog {
   }
   dialog .dialog-action-area,
   messagedialog .dialog-action-area {
-    margin: 0.5821212121212143rem;
+    margin: 0.5833333343rem;
     margin-bottom: 0.6666666677rem;
-    margin-top: 1.2121212121213343rem; 
+    margin-top: 1.3333333343rem; 
   }
-  .view{background-color: rgba(200, 200, 200, 0.5);}
+  decoration { border: 1px solid rgba(0, 0, 0, 0.2);box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2), 0 3px 4px rgba(0, 0, 0, 0.15), 0 3px 3px -3px rgba(0, 0, 0, 0.35); }
+  .titlebar,headerbar { background-color: #303030;box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.2), -1px 0 0 0 rgba(0, 0, 0, 0.2), 0 -1px 0 0 rgba(0, 0, 0, 0.2), inset 0 1px 0 0 alpha(@highlight_color, 0.3), inset 1px 0 0 0 alpha(@highlight_color, 0.07), inset -1px 0 0 0 alpha(@highlight_color, 0.07); }
+  .view{background-color: rgba(55, 55, 55, 0.5);}

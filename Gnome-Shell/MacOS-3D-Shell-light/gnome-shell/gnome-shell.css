@@ -3725,7 +3725,7 @@ StWidget.focused .app-well-app-running-dot {
 
 
 #panel {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(222, 222, 222, 0);
   height: 30px;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.2), 0 0 4px rgba(0, 0, 0, 0.3);
   border-radius: 0px;
@@ -3734,25 +3734,26 @@ StWidget.focused .app-well-app-running-dot {
 #panel .panel-button {
   margin: 2px 4px;
   border-radius: 100px;
-  background-color: rgba(16, 16, 16, 0.35);
+  background-color: rgba(222, 222, 222, 0.35);;
   color:white;
   box-shadow: inset 0 -1px 0 0 alpha(black, 0.2), inset 0 1px 0 0 alpha(black, 0.3), inset 1px 0 0 0 alpha(black, 0.07), inset -1px 0 0 0 alpha(black, 0.07), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
 }
 #panel .panel-button:hover {
-  background-color: rgba(16, 16, 16, 0.45);
+  background-color: rgba(222, 222, 222, 0.45);
   color:white;
   box-shadow: inset 0 -2px 0 0 alpha(black, 0.2), inset 0 1px 0 0 alpha(black, 0.3), inset 1px 0 0 0 alpha(black, 0.07), inset -1px 0 0 0 alpha(black, 0.07), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
 }
 #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked {
-  background-color: rgba(16, 16, 16, 0.55);
+  background-color: rgba(222, 222, 222, 0.55);
   color:white;
-  box-shadow: inset 0 -2px 0 0 alpha(black, 0.2), inset 0 1px 0 0 alpha(black, 0.3), inset 1px 0 0 0 alpha(black, 0.07), inset -1px 0 0 0 alpha(black, 0.07), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
+   box-shadow: inset 0 -2px 0 0 alpha(black, 0.2), inset 0 1px 0 0 alpha(black, 0.3), inset 1px 0 0 0 alpha(black, 0.07), inset -1px 0 0 0 alpha(black, 0.07), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
 }
 
 #dashtodockContainer {
   background: transparent;
  border: 11px;
 }
+
 #dashtodockContainer .app-well-app-running-dot {
   background-color: white;
 }
@@ -3804,7 +3805,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 #dashtodockContainer #dash {
-  background-color: rgba(16, 16, 16, 0.25);
+  background-color: rgba(222, 222, 222, 0.15);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.05);
   box-shadow: inset 0 -1px 0 0 alpha(whitesmoke, 0.2), inset 0 1px 0 0 alpha(whitesmoke, 0.3), inset 1px 0 0 0 alpha(whitesmoke, 0.07), inset -1px 0 0 0 alpha(whitesmoke, 0.07), 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); 
 }
@@ -3818,19 +3819,19 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 #dashtodockContainer.opaque #dash {
-  background-color: rgba(16, 16, 16, 0.25);
+  background-color: rgba(222, 222, 222, 0.15);
 }
 
 #dashtodockContainer.transparent #dash {
-  background-color: rgba(16, 16, 16, 0.25);
+  background-color: rgba(222, 222, 222, 0.15);
 }
 
 #dashtodockContainer:overview #dash {
-  background-color: rgba(16, 16, 16, 0.25);
+  background-color: rgba(222, 222, 222, 0.15);
 }
 
 #dashtodockContainer:overview #dash .app-well-app-running-dot {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(222, 222, 222, 0.85);
 }
 
 #dashtodockContainer:overview #dash StWidget.focused .app-well-app-running-dot {
@@ -3843,7 +3844,7 @@ StWidget.focused .app-well-app-running-dot {
 }
 
 #dashtodockContainer.extended:overview #dash, #dashtodockContainer.opaque.extended:overview #dash, #dashtodockContainer.transparent.extended:overview #dash {
-  background-color: rgba(16, 16, 16, 0.25);
+  background-color: rgba(222, 222, 222, 0.15);
 }
 
 #dashtodockContainer .app-well-app .overview-icon,
@@ -3924,10 +3925,11 @@ StWidget.focused .app-well-app-running-dot {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* Popovers/Menus */
-.popup-menu-boxpointer,
-.candidate-popup-boxpointer {
-  margin: 0.45em;
-  background-color: rgba(16, 16, 16, 0.4);
-  box-shadow: 0 2px 4px -6px black;
-  border-radius: 14px; }
+    /* Popovers/Menus */
+    .popup-menu-boxpointer,
+    .candidate-popup-boxpointer {
+      margin: 0.45em;
+      background-color: rgba(222, 222, 222, 0.4);
+      box-shadow: 0 2px 4px -6px black;
+      border-radius: 14px; }
+      
